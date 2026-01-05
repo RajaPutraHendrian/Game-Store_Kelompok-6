@@ -4,133 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receipts - GameStore</title>
+    <title>Transaction History - GameStore</title>
     <style>
+        /* CSS ROOT & VARIABLES */
         :root {
-            --primary: #4ea8de;
-            --bg-dark: #1e1e2f;
-            --bg-card: #2b2d42;
-            --text: #e0e0e0;
+            --primary: #6366f1;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #10b981;
         }
 
         body {
             margin: 0;
-            font-family: 'Courier New', monospace;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
             background: var(--bg-dark);
             color: var(--text);
             padding: 20px;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 700px;
+            margin: 40px auto;
         }
 
         h1 {
             text-align: center;
-            margin-bottom: 30px;
-            font-family: 'Segoe UI', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
         }
 
+        /* RECEIPT CARD */
         .receipt {
-            background: #fff;
-            color: #000;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            font-size: 14px;
-            line-height: 1.6;
+            background: #ffffff; /* Latar putih agar seperti kertas saat diprint */
+            color: #1e293b;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            font-family: 'Courier New', Courier, monospace;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Efek gerigi di bawah struk */
+        .receipt::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(-45deg, transparent 5px, #ffffff 5px), 
+                        linear-gradient(45deg, transparent 5px, #ffffff 5px);
+            background-size: 10px 10px;
         }
 
         .receipt-header {
             text-align: center;
-            border-bottom: 2px dashed #000;
-            padding-bottom: 15px;
-            margin-bottom: 15px;
+            border-bottom: 2px dashed #cbd5e1;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
         .receipt-header h2 {
             margin: 0;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: 900;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .receipt-header p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #64748b;
         }
 
         .receipt-row {
             display: flex;
             justify-content: space-between;
-            padding: 5px 0;
+            padding: 8px 0;
+            font-size: 14px;
         }
 
         .receipt-section {
-            margin: 15px 0;
+            margin: 20px 0;
             padding: 10px 0;
-            border-top: 1px solid #ccc;
+            border-top: 1px solid #e2e8f0;
         }
 
         .receipt-total {
-            border-top: 2px solid #000;
-            border-bottom: 2px solid #000;
-            padding: 10px 0;
-            margin: 15px 0;
+            border-top: 2px solid #1e293b;
+            border-bottom: 2px solid #1e293b;
+            padding: 15px 0;
+            margin: 20px 0;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
+        }
+
+        .discount-badge {
+            background: #dcfce7;
+            color: #166534;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-left: 5px;
         }
 
         .receipt-footer {
             text-align: center;
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 2px dashed #000;
+            margin-top: 30px;
             font-size: 12px;
-            color: #666;
+            color: #94a3b8;
+            border-top: 1px dashed #cbd5e1;
+            padding-top: 20px;
+        }
+
+        /* BUTTONS */
+        .action-area {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
         }
 
         .btn-print {
             background: var(--primary);
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 25px;
+            border-radius: 12px;
             cursor: pointer;
-            font-family: 'Segoe UI', sans-serif;
-            margin: 10px 5px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-print:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
         }
 
         .btn-back {
-            background: #555;
-            color: #fff;
-            border: none;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 12px 30px;
-            border-radius: 8px;
+            border-radius: 12px;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin: 20px 0;
-            font-family: 'Segoe UI', sans-serif;
+            transition: 0.3s;
+            font-weight: 600;
         }
 
-        .discount-badge {
-            background: #2ecc71;
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.1);
             color: white;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 12px;
-            font-weight: bold;
         }
 
+        /* PRINT SETTINGS */
         @media print {
-            body {
-                background: white;
-            }
-
-            .btn-print,
-            .btn-back {
-                display: none;
-            }
-
-            h1 {
-                display: none;
-            }
+            body { background: white; padding: 0; }
+            .container { margin: 0; max-width: 100%; }
+            .receipt { box-shadow: none; border: none; padding: 0; margin: 0; }
+            .btn-print, .btn-back, h1, .receipt::after { display: none !important; }
         }
     </style>
 </head>
@@ -138,53 +184,23 @@
 <body>
 
     <div class="container">
-        <h1>Riwayat Struk Pembelian</h1>
+        <h1>Transaction History</h1>
 
         <div id="receiptsContainer">
-            <p style="text-align: center; color: #999;">Memuat struk...</p>
+            <p style="text-align: center; color: var(--text-muted);">Memuat riwayat transaksi...</p>
         </div>
 
-        <a href="library.html" class="btn-back">← Kembali ke Library</a>
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="library.html" class="btn-back">← Back to Library</a>
+        </div>
     </div>
 
     <script src="user.js"></script>
     <script>
-        function generateTransactionId() {
-            const timestamp = Date.now();
-            const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-            return `TRX${timestamp}${random}`;
-        }
-
+        // Logika tetap sama dengan script Anda sebelumnya
         function getPaymentMethod() {
-            const methods = [
-                "QRIS - DANA",
-                "QRIS - GoPay",
-                "Transfer Bank BCA",
-                "Transfer Bank Mandiri",
-                "E-Wallet ShopeePay",
-                "Kartu Kredit Visa",
-                "Kartu Debit BCA"
-            ];
+            const methods = ["QRIS - DANA", "QRIS - GoPay", "Transfer Bank BCA", "E-Wallet ShopeePay", "Visa/Mastercard"];
             return methods[Math.floor(Math.random() * methods.length)];
-        }
-
-        function createReceipt(game, user, transactionId, timestamp, discount = 0) {
-            const finalPrice = discount > 0 ? Math.floor(game.price * (1 - discount)) : game.price;
-            const savings = game.price - finalPrice;
-            const paymentMethod = getPaymentMethod();
-
-            return {
-                transactionId,
-                timestamp,
-                username: user.username,
-                game: game.name,
-                gameId: game.id,
-                originalPrice: game.price,
-                discount: discount,
-                finalPrice: finalPrice,
-                savings: savings,
-                paymentMethod: paymentMethod
-            };
         }
 
         function renderReceipts() {
@@ -192,111 +208,100 @@
             const user = getCurrentUser();
 
             if (!user) {
-                container.innerHTML = `<p style="text-align:center; color:#999;">Silakan login untuk melihat struk pembelian.</p>`;
+                container.innerHTML = `<div style="text-align:center; padding:40px; background:var(--bg-card); border-radius:20px;">
+                    <p>Please login to see your transaction history.</p>
+                    <a href="auth.html" class="btn-print" style="display:inline-flex; text-decoration:none;">Login Now</a>
+                </div>`;
                 return;
             }
 
-            // Get receipts from localStorage
             const receiptsKey = `receipts_${user.username}`;
             let receipts = JSON.parse(localStorage.getItem(receiptsKey)) || [];
 
             if (receipts.length === 0) {
-                container.innerHTML = `<p style="text-align:center; color:#999;">Belum ada struk pembelian.</p>`;
+                container.innerHTML = `<p style="text-align:center; color:var(--text-muted); padding:40px;">No transactions found.</p>`;
                 return;
             }
 
             container.innerHTML = "";
 
-            // Display receipts (most recent first)
-            receipts.reverse().forEach((receipt, index) => {
+            receipts.reverse().forEach((receipt) => {
                 const receiptDiv = document.createElement("div");
                 receiptDiv.className = "receipt";
 
                 const date = new Date(receipt.timestamp);
-                const dateStr = date.toLocaleDateString('id-ID');
-                const timeStr = date.toLocaleTimeString('id-ID');
+                const dateStr = date.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+                const timeStr = date.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
 
                 receiptDiv.innerHTML = `
-      <div class="receipt-header">
-        <h2>🎮 GAME STORE</h2>
-        <p style="margin: 5px 0;">Kelompok 6</p>
-      </div>
+                    <div class="receipt-header">
+                        <h2>GAMESTORE</h2>
+                        <p>Official Digital Receipt - Kelompok 6</p>
+                    </div>
 
-      <div class="receipt-section">
-        <div class="receipt-row">
-          <span>No. Transaksi</span>
-          <span><strong>${receipt.transactionId}</strong></span>
-        </div>
-        <div class="receipt-row">
-          <span>Tanggal/Waktu</span>
-          <span>${dateStr} ${timeStr}</span>
-        </div>
-        <div class="receipt-row">
-          <span>Username</span>
-          <span>${receipt.username}</span>
-        </div>
-      </div>
+                    <div class="receipt-section">
+                        <div class="receipt-row">
+                            <span>ID Transaksi</span>
+                            <span>#${receipt.transactionId}</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span>Waktu</span>
+                            <span>${dateStr} | ${timeStr}</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span>Customer</span>
+                            <span>${receipt.username.toUpperCase()}</span>
+                        </div>
+                    </div>
 
-      <div class="receipt-section">
-        <strong>DETAIL PEMBELIAN:</strong>
-        <div class="receipt-row" style="margin-top: 10px;">
-          <span>Game</span>
-          <span><strong>${receipt.game}</strong></span>
-        </div>
-        <div class="receipt-row">
-          <span>Harga Asli</span>
-          <span>Rp ${receipt.originalPrice.toLocaleString('id-ID')}</span>
-        </div>
-        ${receipt.discount > 0 ? `
-        <div class="receipt-row" style="color: #2ecc71;">
-          <span>Diskon <span class="discount-badge">${(receipt.discount * 100)}%</span></span>
-          <span>- Rp ${receipt.savings.toLocaleString('id-ID')}</span>
-        </div>
-        ` : ''}
-      </div>
+                    <div class="receipt-section">
+                        <span style="font-weight:bold; font-size:12px; text-transform:uppercase;">Item Detail:</span>
+                        <div class="receipt-row" style="margin-top:10px;">
+                            <span>${receipt.game}</span>
+                            <span>Rp ${receipt.originalPrice.toLocaleString('id-ID')}</span>
+                        </div>
+                        ${receipt.discount > 0 ? `
+                        <div class="receipt-row" style="color: #166534;">
+                            <span>Discount <span class="discount-badge">${(receipt.discount * 100)}% OFF</span></span>
+                            <span>- Rp ${receipt.savings.toLocaleString('id-ID')}</span>
+                        </div>
+                        ` : ''}
+                    </div>
 
-      <div class="receipt-total">
-        <div class="receipt-row">
-          <span>TOTAL BAYAR</span>
-          <span>Rp ${receipt.finalPrice.toLocaleString('id-ID')}</span>
-        </div>
-      </div>
+                    <div class="receipt-total">
+                        <div class="receipt-row">
+                            <span>GRAND TOTAL</span>
+                            <span>Rp ${receipt.finalPrice.toLocaleString('id-ID')}</span>
+                        </div>
+                    </div>
 
-      <div class="receipt-section">
-        <strong>METODE PEMBAYARAN:</strong>
-        <div style="margin-top: 5px;">${receipt.paymentMethod}</div>
-      </div>
+                    <div class="receipt-section">
+                        <div class="receipt-row">
+                            <span>Payment Mode</span>
+                            <span>${receipt.paymentMethod || getPaymentMethod()}</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span>Status</span>
+                            <span style="color:#166534; font-weight:bold;">PAID / SUCCESS</span>
+                        </div>
+                    </div>
 
-      <div class="receipt-footer">
-        <p>Terima kasih atas pembelian Anda!</p>
-        <p>Game dapat diunduh dari menu Library</p>
-        <p>═══════════════════════════════</p>
-      </div>
+                    <div class="receipt-footer">
+                        <p>Thank you for your purchase!</p>
+                        <p>This is a computer-generated receipt.</p>
+                        <p>Keep gaming, keep winning.</p>
+                    </div>
 
-      <button class="btn-print" onclick="printReceipt(this)">🖨️ Print Struk</button>
-    `;
-
+                    <div class="action-area">
+                        <button class="btn-print" onclick="window.print()">🖨️ Print Receipt</button>
+                    </div>
+                `;
                 container.appendChild(receiptDiv);
             });
-        }
-
-        function printReceipt(button) {
-            const receipt = button.parentElement;
-            const printWindow = window.open('', '', 'height=600,width=800');
-
-            printWindow.document.write('<html><head><title>Struk Pembelian</title>');
-            printWindow.document.write('<style>body{font-family:Courier New,monospace;padding:20px;}.receipt-row{display:flex;justify-content:space-between;padding:5px 0;}</style>');
-            printWindow.document.write('</head><body>');
-            printWindow.document.write(receipt.innerHTML);
-            printWindow.document.write('</body></html>');
-
-            printWindow.document.close();
-            printWindow.print();
         }
 
         document.addEventListener("DOMContentLoaded", renderReceipts);
     </script>
 
 </body>
-
 </html>

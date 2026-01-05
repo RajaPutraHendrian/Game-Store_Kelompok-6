@@ -18,6 +18,7 @@
 #include "Membership.h"
 #include "PaymentSystem.h"
 #include "TransactionCounter.h"
+#include "PublisherRanking.h"
 using namespace std;
 
 class GameStore {
@@ -28,6 +29,7 @@ private:
     GameList downloaded;
     GameBrowsingStack browsingHistory;
     Queue<PendingGame> pendingGamesQueue;
+    PublisherRanking publisherRanking;  // AVL Tree untuk ranking publisher
     
     string currentUsername;
     bool isPublisherMode;
@@ -93,6 +95,9 @@ public:
     
     // Lihat history struk pembelian
     void viewReceiptHistory();
+    
+    // Publisher Ranking (Admin) - menggunakan AVL Tree
+    void viewPublisherRanking();
 };
 
 GameStore::GameStore() {
@@ -1583,4 +1588,18 @@ void GameStore::viewReceiptHistory() {
     }
 }
 
+// Publisher Ranking untuk Admin (menggunakan AVL Tree)
+void GameStore::viewPublisherRanking() {
+    cout << "\n========================================" << endl;
+    cout << "     LOADING PUBLISHER RANKING..." << endl;
+    cout << "========================================" << endl;
+    
+    // Build AVL tree dan load data publisher
+    publisherRanking.buildRankings();
+    
+    // Tampilkan full rankings untuk admin
+    publisherRanking.showFullRankings();
+}
+
 #endif
+

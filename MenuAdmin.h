@@ -22,7 +22,8 @@ void menuAdmin(GameStore &store, UserSystem &userSys) {
         cout << "\n3. Browse All Games";
         cout << "\n4. Lihat Daftar Semua User";
         cout << "\n5. Lihat Daftar Semua Publisher";
-        cout << "\n6. Logout";
+        cout << "\n6. Lihat Publisher Ranking (AVL Tree)";
+        cout << "\n7. Logout";
         cout << "\n0. Keluar Program";
         cout << "\nPilih: ";
 
@@ -55,6 +56,9 @@ void menuAdmin(GameStore &store, UserSystem &userSys) {
                 userSys.listAllPublishers();
                 break;
             case 6:
+                store.viewPublisherRanking();
+                break;
+            case 7:
                 userSys.logout();
                 return;
             case 0:

@@ -2,38 +2,86 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Authentication</title>
-<link rel="stylesheet" href="auth.css">
+<title>Authentication - GameStore</title>
+<style>
+  :root {
+    --primary: #6366f1;
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --text: #f8fafc;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text);
+  }
+  .auth-wrapper { width: 100%; max-width: 400px; padding: 20px; }
+  .auth-card {
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+  }
+  h2 { margin-bottom: 30px; font-size: 28px; font-weight: 800; color: var(--primary); }
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    background: #334155;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+  }
+  input:focus { border-color: var(--primary); }
+  button {
+    width: 100%;
+    padding: 14px;
+    background: var(--primary);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  button:hover { background: #4f46e5; transform: translateY(-2px); }
+  .link { margin-top: 25px; font-size: 14px; color: #94a3b8; }
+  .link span { color: var(--primary); cursor: pointer; font-weight: 600; }
+  .link span:hover { text-decoration: underline; }
+</style>
 </head>
-
 <body>
 <div class="auth-wrapper">
   <div class="auth-card">
     <h2 id="title">Login</h2>
-
-    <!-- Form Login/Register User -->
     <div id="userForm">
       <input type="text" id="username" placeholder="Username">
       <input type="password" id="password" placeholder="Password">
     </div>
-
-    <!-- Form Tambahan untuk Publisher -->
     <div id="publisherForm" style="display:none;">
       <input type="text" id="studioName" placeholder="Nama Studio">
       <input type="text" id="country" placeholder="Negara">
       <input type="text" id="yearFounded" placeholder="Tahun Berdiri">
     </div>
-
-    <button id="mainBtn" onclick="submitForm()">Login</button>
-
+    <button id="mainBtn" onclick="submitForm()">Masuk Sekarang</button>
     <p class="link">
-      <span onclick="switchMode()">Register</span> ·
-      <span onclick="switchRole()" id="roleSwitch" style="display:none;">Daftar sebagai Publisher</span> ·
-      <span onclick="forgotPassword()">Forgot Password?</span>
+      <span onclick="switchMode()">Register Akun</span> ·
+      <span onclick="switchRole()" id="roleSwitch" style="display:none;">Publisher</span> ·
+      <span onclick="forgotPassword()">Lupa Password?</span>
     </p>
   </div>
 </div>
-
 <script src="user.js"></script>
 <script src="auth.js"></script>
 </body>

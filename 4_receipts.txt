@@ -1,0 +1,27 @@
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX0005
+Tanggal/Waktu : 05/01/2026 22:44:57
+Username      : 4
+========================================
+DETAIL PEMBELIAN:
+  Game        : Still Wake UP
+  Kategori    : Horror
+  Publisher   : Epoc Gamers
+----------------------------------------
+  Harga Asli  : Rp 123
+  TOTAL BAYAR : Rp 123
+========================================
+METODE PEMBAYARAN:
+  GoPay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+

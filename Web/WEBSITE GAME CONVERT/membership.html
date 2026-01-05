@@ -6,118 +6,181 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Membership - GameStore</title>
   <style>
+    /* CSS ROOT & VARIABLES */
     :root {
-      --primary: #4ea8de;
-      --bg-dark: #1e1e2f;
-      --bg-card: #2b2d42;
-      --text: #e0e0e0;
-      --accent: #f1c40f;
+      --primary: #6366f1;
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
       --premium: #ffd700;
+      --premium-gradient: linear-gradient(135deg, #ffd700, #b8860b);
     }
 
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
       background: var(--bg-dark);
       color: var(--text);
+      line-height: 1.6;
     }
 
     .container {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
 
+    h1 {
+      text-align: center;
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+    }
+
+    /* MEMBERSHIP CARD (STATUS) */
     .membership-card {
       background: var(--bg-card);
-      border-radius: 15px;
-      padding: 30px;
+      border-radius: 24px;
+      padding: 40px;
       margin-bottom: 30px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
     }
 
+    .membership-card h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* BADGES */
     .premium-badge {
-      display: inline-block;
-      background: linear-gradient(135deg, #ffd700, #ffed4e);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--premium-gradient);
       color: #000;
-      padding: 8px 20px;
-      border-radius: 25px;
-      font-weight: bold;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 800;
       font-size: 14px;
-      margin-bottom: 15px;
+      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
     }
 
     .free-badge {
       display: inline-block;
-      background: #555;
+      background: rgba(255,255,255,0.1);
       color: #fff;
-      padding: 8px 20px;
-      border-radius: 25px;
-      font-weight: bold;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 700;
       font-size: 14px;
-      margin-bottom: 15px;
     }
 
+    /* BENEFITS LIST */
     .benefits-list {
       list-style: none;
       padding: 0;
-      margin: 20px 0;
+      margin: 30px 0;
     }
 
     .benefits-list li {
-      padding: 10px 0;
-      border-bottom: 1px solid #3d3f5e;
+      padding: 15px 0;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    .benefits-list li:before {
-      content: "";
-      color: var(--primary);
-      font-weight: bold;
-      margin-right: 10px;
+    .benefits-list li::before {
+      content: "✓";
+      color: var(--premium);
+      font-weight: 900;
+      background: rgba(255, 215, 0, 0.1);
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 12px;
     }
 
-    .btn-upgrade {
-      background: linear-gradient(135deg, var(--premium), #ffed4e);
-      color: #000;
-      border: none;
-      padding: 15px 40px;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .btn-upgrade:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
-    }
-
-    .btn-back {
-      background: #555;
-      color: #fff;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
+    /* PRICING & CTA */
+    .discount-info {
+      background: rgba(99, 102, 241, 0.05);
+      border-left: 4px solid var(--primary);
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 12px;
+      font-size: 15px;
     }
 
     .price-tag {
-      font-size: 32px;
-      font-weight: bold;
-      color: var(--premium);
+      font-size: 42px;
+      font-weight: 900;
+      color: var(--text);
       margin: 20px 0;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
     }
 
-    .discount-info {
-      background: rgba(78, 168, 222, 0.1);
-      border-left: 4px solid var(--primary);
-      padding: 15px;
-      margin: 20px 0;
-      border-radius: 4px;
+    .price-tag span {
+      font-size: 16px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .btn-upgrade {
+      background: var(--premium-gradient);
+      color: #000;
+      border: none;
+      padding: 20px 50px;
+      border-radius: 16px;
+      font-size: 18px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn-upgrade:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(255, 215, 0, 0.3);
+    }
+
+    .btn-back {
+      display: block;
+      text-align: center;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-top: 40px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-back:hover {
+      color: var(--text);
+    }
+
+    /* DECORATION */
+    .membership-card::after {
+      content: "👑";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 120px;
+      opacity: 0.05;
+      transform: rotate(15deg);
     }
   </style>
 </head>
@@ -125,34 +188,39 @@
 <body>
 
   <div class="container">
-    <h1 style="text-align: center; margin-bottom: 10px;">GameStore Membership</h1>
-    <p style="text-align: center; color: #999; margin-bottom: 40px;">Upgrade untuk mendapatkan benefit eksklusif!</p>
+    <h1>GameStore Membership</h1>
+    <p style="text-align: center; color: var(--text-muted); margin-bottom: 50px;">Buka potensi penuh akun gaming Anda</p>
 
-    <!-- Current Status -->
     <div class="membership-card">
       <h2>Status Membership Anda</h2>
-      <div id="currentStatus"></div>
+      <div id="currentStatus" style="margin-top: 20px;">
+        </div>
     </div>
 
-    <!-- Premium Benefits -->
     <div class="membership-card" id="upgradeSection">
-      <h2>✨ Premium Membership Benefits</h2>
+      <h2>✨ Premium Benefits</h2>
       <ul class="benefits-list">
-        <li>Diskon 30% untuk SEMUA pembelian game</li>
-        <li>Akses early access untuk game baru</li>
-        <li>Priority customer support</li>
-        <li>Exclusive premium badge di profile</li>
-        <li>Monthly free game voucher</li>
+        <li>Diskon Flat 30% untuk SEMUA pembelian game</li>
+        <li>Akses Early Access untuk judul game terbaru</li>
+        <li>Prioritas Customer Support 24/7</li>
+        <li>Badge Premium Eksklusif pada profil Anda</li>
+        <li>Voucher game gratis setiap bulan</li>
       </ul>
 
       <div class="discount-info">
-        <strong>💰 Contoh Penghematan:</strong><br>
-        Game Rp 100.000 → Hanya Rp 70.000 (Hemat Rp 30.000!)<br>
-        Game Rp 500.000 → Hanya Rp 350.000 (Hemat Rp 150.000!)
+        <strong style="color: var(--primary); display: block; margin-bottom: 10px;">💰 Simulasi Penghematan:</strong>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+          <span>Game AAA (Rp 750.000)</span>
+          <span style="color: var(--premium); font-weight: bold;">Hemat Rp 225.000</span>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span>Game Indie (Rp 100.000)</span>
+          <span style="color: var(--premium); font-weight: bold;">Hemat Rp 30.000</span>
+        </div>
       </div>
 
-      <div class="price-tag">Rp 50.000 / Lifetime</div>
-      <button class="btn-upgrade" onclick="upgradeToPremium()">🚀 Upgrade Sekarang!</button>
+      <div class="price-tag">Rp 50.000 <span>/ Lifetime Access</span></div>
+      <button class="btn-upgrade" onclick="upgradeToPremium()">🚀 Aktifkan Premium Sekarang</button>
     </div>
 
     <a href="index.html" class="btn-back">← Kembali ke Store</a>
@@ -166,7 +234,7 @@
       const upgradeSection = document.getElementById("upgradeSection");
 
       if (!user) {
-        statusDiv.innerHTML = `<p>Silakan login terlebih dahulu untuk melihat status membership.</p>`;
+        statusDiv.innerHTML = `<p style="color: var(--text-muted)">Silakan login terlebih dahulu untuk melihat status membership.</p>`;
         upgradeSection.style.display = "none";
         return;
       }
@@ -175,17 +243,18 @@
 
       if (isPremium) {
         statusDiv.innerHTML = `
-      <span class="premium-badge">PREMIUM MEMBER</span>
-      <h3>Selamat! Anda adalah member Premium</h3>
-      <p style="color: #999;">Nikmati diskon 30% untuk semua pembelian game!</p>
-    `;
+          <div class="premium-badge">⭐ PREMIUM MEMBER</div>
+          <h3 style="margin: 20px 0 10px 0; font-size: 24px;">Selamat, ${user.username.toUpperCase()}!</h3>
+          <p style="color: var(--text-muted); margin: 0;">Status akun Anda saat ini adalah <b>Elite Premium</b>. Nikmati semua keuntungan eksklusif di setiap transaksi.</p>
+        `;
         upgradeSection.style.display = "none";
       } else {
         statusDiv.innerHTML = `
-      <span class="free-badge">FREE MEMBER</span>
-      <h3>Anda saat ini menggunakan membership gratis</h3>
-      <p style="color: #999;">Upgrade ke Premium untuk mendapatkan diskon 30%!</p>
-    `;
+          <div class="free-badge">FREE MEMBER</div>
+          <h3 style="margin: 20px 0 10px 0; font-size: 24px;">Halo, ${user.username.toUpperCase()}</h3>
+          <p style="color: var(--text-muted); margin: 0;">Anda masih menggunakan akun Standar. Upgrade sekarang untuk menghemat lebih banyak uang!</p>
+        `;
+        upgradeSection.style.display = "block";
       }
     }
 
@@ -197,20 +266,14 @@
         return;
       }
 
-      if (user.membershipLevel === "premium") {
-        alert("Anda sudah menjadi Premium Member!");
-        return;
-      }
-
-      const confirm = window.confirm(
-        "Upgrade ke Premium Membership?\n\n" +
-        "Biaya: Rp 50.000 (Lifetime)\n" +
-        "Benefit: Diskon 30% untuk SEMUA pembelian\n\n" +
-        "Lanjutkan pembayaran?"
+      const confirmUpgrade = window.confirm(
+        "KONFIRMASI UPGRADE PREMIUM\n\n" +
+        "Biaya: Rp 50.000 (Sekali bayar seumur hidup)\n" +
+        "Keuntungan: Diskon 30% otomatis selamanya.\n\n" +
+        "Apakah Anda ingin melanjutkan?"
       );
 
-      if (confirm) {
-        // Update user membership
+      if (confirmUpgrade) {
         const users = JSON.parse(localStorage.getItem("users")) || [];
         const userIndex = users.findIndex(u => u.username === user.username);
 
@@ -219,7 +282,7 @@
           users[userIndex].membershipDate = new Date().toISOString();
           localStorage.setItem("users", JSON.stringify(users));
 
-          alert("🎉 Selamat! Anda sekarang adalah Premium Member!\n\nDiskon 30% otomatis diterapkan di setiap pembelian.");
+          alert("🎉 PEMBAYARAN BERHASIL!\n\nSelamat datang di Premium Club. Diskon 30% Anda sudah aktif!");
           displayMembershipStatus();
         }
       }

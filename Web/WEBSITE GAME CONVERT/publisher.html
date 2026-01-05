@@ -2,49 +2,205 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Publisher Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publisher Dashboard - GameStore</title>
 <style>
-input[type="file"] {
-  cursor: pointer;
-}
+    /* CSS ROOT & VARIABLES */
+    :root {
+        --primary: #6366f1;
+        --primary-hover: #4f46e5;
+        --bg-dark: #0f172a;
+        --bg-card: #1e293b;
+        --bg-input: #0f172a;
+        --text: #f8fafc;
+        --text-muted: #94a3b8;
+        --danger: #ef4444;
+        --success: #10b981;
+        --warning: #f1c40f;
+    }
 
-input[type="file"]::file-selector-button {
-  background: #4ea8de;
-  color: white;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 10px;
-}
+    body {
+        background: var(--bg-dark);
+        color: var(--text);
+        font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+        margin: 0;
+        line-height: 1.6;
+    }
 
-input[type="file"]::file-selector-button:hover {
-  background: #3d8abd;
-}
+    /* NAVBAR */
+    .nav {
+        display: flex;
+        align-items: center;
+        padding: 0 5%;
+        height: 70px;
+        background: rgba(30, 41, 59, 0.8);
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
-/* Responsive Table */
-@media (max-width: 768px) {
-  table {
-    font-size: 12px;
-  }
-  
-  th, td {
-    padding: 6px;
-  }
-}
-body{background:#1e1e2f; color:#e0e0e0; font-family:Arial; margin:0;}
-.nav{background:#2b2d42; padding:10px 20px;}
-.nav a{color:white; margin-right:15px; text-decoration:none;}
-.wrapper{max-width:1000px; margin:auto; padding:20px;}
-.section{margin-bottom:30px; background:#2b2d42; padding:20px; border-radius:8px;}
-.card{background:#3a3d5c; padding:15px; margin-bottom:10px; border-radius:4px;}
-button{padding:8px 15px; border:none; cursor:pointer; background:#4ea8de; color:white; border-radius:4px; margin-right:5px;}
-input, select{padding:8px; margin-right:10px; background:#1e1e2f; border:1px solid #4a4d6d; color:white; border-radius:4px;}
-table{width:100%; border-collapse:collapse; margin-top:10px;}
-th, td{padding:10px; text-align:left; border-bottom:1px solid #3a3d5c;}
-th{background:#3a3d5c;}
-.status-pending{color:#f1c40f;}
-.status-approved{color:#2ecc71;}
+    .nav a {
+        color: var(--text-muted);
+        text-decoration: none;
+        margin-right: 25px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: 0.3s;
+    }
+
+    .nav a:hover {
+        color: var(--primary);
+    }
+
+    /* WRAPPER */
+    .wrapper {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+    }
+
+    #studioInfo {
+        color: var(--primary);
+        font-weight: 600;
+        margin-bottom: 40px;
+        background: rgba(99, 102, 241, 0.1);
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    /* SECTIONS */
+    .section {
+        background: var(--bg-card);
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .section h3 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 20px;
+        border-left: 4px solid var(--primary);
+        padding-left: 15px;
+    }
+
+    /* FORMS */
+    input, select {
+        padding: 12px 16px;
+        background: var(--bg-input);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
+        border-radius: 10px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    }
+
+    /* UPLOAD BUTTONS */
+    input[type="file"]::file-selector-button {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    input[type="file"]::file-selector-button:hover {
+        background: var(--primary-hover);
+    }
+
+    /* BUTTONS */
+    button {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        background: var(--primary);
+        color: white;
+        border-radius: 10px;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+    }
+
+    .btn-submit {
+        background: var(--success);
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn-submit:hover {
+        background: #059669;
+        box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+    }
+
+    /* TABLE */
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        margin-top: 10px;
+    }
+
+    th {
+        padding: 15px;
+        text-align: left;
+        color: var(--text-muted);
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    td {
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    td:first-child { border-radius: 12px 0 0 12px; }
+    td:last-child { border-radius: 0 12px 12px 0; }
+
+    .status-pending { color: var(--warning); font-weight: bold; }
+    .status-approved { color: var(--success); font-weight: bold; }
+
+    /* PREVIEW IMG */
+    #previewImg {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 2px solid var(--primary);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+        .nav { height: auto; padding: 20px; flex-direction: column; gap: 10px; }
+        .wrapper { margin: 20px auto; }
+        table { display: block; overflow-x: auto; }
+    }
 </style>
 </head>
 <body>
@@ -52,75 +208,68 @@ th{background:#3a3d5c;}
 <div class="nav">
   <a href="index.html">STORE</a>
   <a href="publisher.html">PUBLISHER DASHBOARD</a>
-  <a onclick="logout()" style="cursor:pointer;">LOGOUT</a>
+  <a onclick="logout()" style="cursor:pointer; color: var(--danger);">LOGOUT</a>
 </div>
 
 <div class="wrapper">
   <h2>Publisher Dashboard</h2>
-  <p id="studioInfo"></p>
+  <p id="studioInfo">Memuat informasi studio...</p>
 
-  <!-- Submit Game Baru -->
-<div class="section">
-  <h3>Submit Game Baru</h3>
-  
-  <div style="display:grid; gap:15px; max-width:600px;">
-    <input type="text" id="gameName" placeholder="Nama Game" style="width:100%;">
+  <div class="section">
+    <h3>Submit Game Baru</h3>
     
-    <input type="number" id="gamePrice" placeholder="Harga (Rp)" style="width:100%;">
-    
-    <input type="text" id="gameCategory" placeholder="Kategori (Action, RPG, dll)" style="width:100%;">
-    
-    <!-- Upload Gambar -->
-    <div style="background:#1e1e2f; padding:15px; border-radius:4px; border:1px solid #4a4d6d;">
-      <label style="display:block; margin-bottom:10px; font-weight:bold;">Gambar Game (Opsional)</label>
-      
-      <div style="display:flex; gap:10px; align-items:center;">
-        <input type="file" id="gameImage" accept="image/*" onchange="previewImage()" 
-               style="flex:1; background:#2b2d42; padding:8px; border:1px solid #4a4d6d; border-radius:4px; color:white;">
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+      <div style="display:flex; flex-direction:column; gap:15px;">
+        <input type="text" id="gameName" placeholder="Nama Game">
+        <input type="number" id="gamePrice" placeholder="Harga (Rp)">
+        <input type="text" id="gameCategory" placeholder="Kategori (Action, RPG, dll)">
         
-        <button onclick="clearImage()" style="background:#e63946;">Hapus</button>
+        <div style="background: rgba(255,255,255,0.02); padding:20px; border-radius:15px; border:1px dashed rgba(255,255,255,0.1);">
+          <label style="display:block; margin-bottom:12px; font-weight:bold; font-size:14px;">Gambar Game (Opsional)</label>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <input type="file" id="gameImage" accept="image/*" onchange="previewImage()" style="width: 100%;">
+            <button onclick="clearImage()" style="background:var(--danger); padding: 8px 12px;">X</button>
+          </div>
+          <p style="margin:10px 0 0 0; font-size:11px; color:var(--text-muted);">
+            JPG/PNG, max 2MB. Jika kosong, sistem menggunakan gambar default.
+          </p>
+        </div>
+        
+        <button onclick="submitGame()" class="btn-submit">
+          🚀 SUBMIT UNTUK VERIFIKASI
+        </button>
       </div>
-      
-      <!-- Preview Gambar -->
-      <div id="imagePreview" style="margin-top:15px; display:none;">
-        <p style="margin:0 0 10px 0; font-size:13px; color:#aaa;">Preview:</p>
-        <img id="previewImg" style="max-width:200px; max-height:150px; border-radius:4px; border:2px solid #4ea8de;">
-      </div>
-      
-      <p style="margin:10px 0 0 0; font-size:12px; color:#888;">
-        Tips: Ukuran ideal 800x600px, format JPG/PNG, max 2MB<br>
-        Jika tidak upload, akan menggunakan gambar default.
-      </p>
-    </div>
-    
-    <button onclick="submitGame()" style="padding:12px; font-size:16px; font-weight:bold;">
-      🚀 Submit untuk Verifikasi
-    </button>
-  </div>
-</div>
 
-  <!-- Game Menunggu Verifikasi -->
+      <div id="imagePreview" style="display:none; text-align:center; padding: 10px;">
+        <p style="margin:0 0 10px 0; font-size:13px; color:var(--text-muted);">Tampilan Preview Gambar:</p>
+        <img id="previewImg" alt="Preview">
+      </div>
+    </div>
+  </div>
+
   <div class="section">
     <h3>Game Menunggu Verifikasi</h3>
-    <div id="pendingList"></div>
+    <div id="pendingList">
+        <p style="color:var(--text-muted); font-style:italic;">Belum ada game dalam antrean verifikasi.</p>
+    </div>
   </div>
 
-  <!-- Game yang Disetujui -->
-<div class="section">
-  <h3>Game yang Disetujui</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Nama Game</th>
-        <th>Harga</th>
-        <th>Kategori</th>
-        <th>Terjual</th>
-        <th>Rating</th>
-        <th>Aksi</th>
-      </tr>
-    </thead>
-    <tbody id="approvedList"></tbody>
-  </table>
+  <div class="section">
+    <h3>Data Penjualan & Game Aktif</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Game</th>
+          <th>Harga</th>
+          <th>Kategori</th>
+          <th>Terjual</th>
+          <th>Rating</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="approvedList"></tbody>
+    </table>
+  </div>
 </div>
 
 <script src="user.js"></script>

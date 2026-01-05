@@ -3,48 +3,172 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - GameStore</title>
 
   <style>
-    body {
-      background: #1e1e2f;
-      color: #e0e0e0;
-      font-family: Arial;
-      margin: 0;
+    /* CSS ROOT & VARIABLES */
+    :root {
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --danger: #ef4444;
+      --success: #10b981;
+      --warning: #f1c40f;
     }
 
+    body {
+      background: var(--bg-dark);
+      color: var(--text);
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
     .nav {
-      background: #2b2d42;
-      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      padding: 0 5%;
+      height: 70px;
+      background: rgba(30, 41, 59, 0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .nav a {
-      color: white;
-      margin-right: 15px;
+      color: var(--text-muted);
       text-decoration: none;
+      margin-right: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: 0.3s;
     }
 
+    .nav a:hover {
+      color: var(--primary);
+    }
+
+    .nav a[href="admin.html"] {
+      color: var(--text);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 5px;
+    }
+
+    /* WRAPPER */
     .wrapper {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
     }
 
+    .header-full {
+      grid-column: 1 / -1;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* SECTIONS */
     .section {
-      margin-bottom: 30px;
+      background: var(--bg-card);
+      padding: 25px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      height: fit-content;
     }
 
+    .section-full {
+      grid-column: 1 / -1;
+    }
+
+    /* CARDS IN LISTS */
     .card {
-      background: #3a3d5c;
-      padding: 10px;
-      margin-bottom: 10px;
+      background: rgba(15, 23, 42, 0.5);
+      padding: 15px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+      font-size: 14px;
+      transition: 0.2s;
     }
 
+    .card:hover {
+      background: rgba(15, 23, 42, 0.8);
+    }
+
+    /* BUTTONS */
     button {
-      padding: 6px 10px;
+      padding: 12px 20px;
       border: none;
       cursor: pointer;
-      background: #4ea8de;
+      background: var(--primary);
+      color: white;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.3s;
+      text-transform: uppercase;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+    }
+
+    .btn-verify {
+      background: var(--success);
+      width: auto;
+      padding: 6px 15px;
+      font-size: 12px;
+    }
+
+    /* BADGES */
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 800;
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+
+    .badge-queue { background: var(--warning); color: #000; }
+    .badge-stack { background: var(--primary); color: #fff; }
+
+    /* EMPTY STATE */
+    .empty-msg {
+      text-align: center;
+      color: var(--text-muted);
+      padding: 20px;
+      font-style: italic;
+    }
+
+    @media (max-width: 900px) {
+      .wrapper { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -53,25 +177,34 @@
 
   <div class="nav">
     <a href="index.html">STORE</a>
-    <a href="admin.html">ADMIN</a>
+    <a href="admin.html">ADMIN CONTROL PANEL</a>
   </div>
 
   <div class="wrapper">
-
-    <div class="section">
-      <h2>Purchase Queue</h2>
-      <div id="queueList"></div>
-      <button onclick="processQueue()">Process Next</button>
+    <div class="header-full">
+      <h2>⚙️ System Administration</h2>
     </div>
 
     <div class="section">
-      <h2>Transaction Stack</h2>
-      <div id="stackList"></div>
+      <h2>📦 Purchase Queue <span class="badge badge-queue">FIFO</span></h2>
+      <div id="queueList">
+        <p class="empty-msg">Tidak ada antrean pembelian.</p>
+      </div>
+      <button onclick="processQueue()">⚡ Process Next Customer</button>
     </div>
 
     <div class="section">
-      <h2>Publisher Game Verification</h2>
-      <div id="publisherQueueList"></div>
+      <h2>📜 Transaction History <span class="badge badge-stack">LIFO</span></h2>
+      <div id="stackList">
+        <p class="empty-msg">Belum ada riwayat transaksi.</p>
+      </div>
+    </div>
+
+    <div class="section section-full">
+      <h2>🎮 Publisher Game Verification</h2>
+      <div id="publisherQueueList">
+        <p class="empty-msg">Tidak ada permohonan publikasi game baru.</p>
+      </div>
     </div>
 
   </div>

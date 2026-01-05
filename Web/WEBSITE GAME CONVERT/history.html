@@ -6,134 +6,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browsing History - GameStore</title>
     <style>
+        /* CSS ROOT & VARIABLES */
         :root {
-            --primary: #4ea8de;
-            --bg-dark: #1e1e2f;
-            --bg-card: #2b2d42;
-            --text: #e0e0e0;
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --danger: #ef4444;
+            --success: #10b981;
         }
 
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
             background: var(--bg-dark);
             color: var(--text);
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
         }
 
+        /* HEADER & CONTAINER */
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
+            padding: 60px 20px;
         }
 
         h1 {
             text-align: center;
-            margin-bottom: 30px;
-            color: var(--primary);
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: var(--text);
+            letter-spacing: -1px;
         }
 
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            font-size: 16px;
+        }
+
+        /* HISTORY GRID */
         .history-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
             margin-top: 30px;
         }
 
+        /* CARD STYLING */
         .history-item {
             background: var(--bg-card);
-            border-radius: 10px;
+            border-radius: 16px;
             overflow: hidden;
-            transition: transform 0.3s;
-            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
         }
 
         .history-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(78, 168, 222, 0.3);
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
         .history-item img {
             width: 100%;
-            height: 150px;
+            height: 160px;
             object-fit: cover;
+            background: #0f172a;
         }
 
         .history-item-info {
-            padding: 15px;
+            padding: 20px;
         }
 
         .history-item h3 {
-            margin: 0 0 10px 0;
-            font-size: 16px;
+            margin: 0 0 8px 0;
+            font-size: 18px;
+            font-weight: 700;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .history-item .price {
             color: var(--primary);
-            font-weight: bold;
-            font-size: 18px;
+            font-weight: 800;
+            font-size: 20px;
+            margin-bottom: 5px;
         }
 
         .history-item .viewed-time {
             font-size: 12px;
-            color: #999;
-            margin-top: 5px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 15px;
         }
 
+        /* BUTTONS IN CARD */
         .btn-container {
             display: flex;
             gap: 10px;
-            margin-top: 10px;
         }
 
         .btn-action {
             flex: 1;
-            padding: 8px;
+            padding: 10px;
             border: none;
-            border-radius: 5px;
-            font-size: 12px;
-            font-weight: bold;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-buy {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-buy:hover {
+            background: var(--primary-hover);
+        }
+
+        .btn-wishlist {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-wishlist:hover {
+            background: rgba(231, 76, 60, 0.1);
+            color: #e74c3c;
+            border-color: #e74c3c;
+        }
+
+        /* BOTTOM CONTROLS */
+        .controls {
+            margin-top: 60px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn-clear {
+            background: transparent;
+            color: var(--danger);
+            border: 1px solid var(--danger);
+            padding: 12px 35px;
+            border-radius: 12px;
+            font-weight: 700;
             cursor: pointer;
             transition: 0.3s;
         }
 
-        .btn-buy {
-            background: #2ecc71;
+        .btn-clear:hover {
+            background: var(--danger);
             color: white;
-        }
-
-        .btn-wishlist {
-            background: #e74c3c;
-            color: white;
-        }
-
-        .btn-clear {
-            background: #e63946;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 8px;
-            cursor: pointer;
-            margin: 20px auto;
-            display: block;
-        }
-
-        .empty-message {
-            text-align: center;
-            padding: 50px;
-            color: #999;
+            box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
         }
 
         .btn-back {
-            background: #555;
-            color: #fff;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 8px;
-            cursor: pointer;
+            color: var(--text-muted);
             text-decoration: none;
-            display: inline-block;
-            margin: 20px 0;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            color: var(--text);
+        }
+
+        /* EMPTY STATE */
+        .empty-message {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 2px dashed rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            color: var(--text-muted);
+            font-size: 18px;
         }
     </style>
 </head>
@@ -142,14 +206,16 @@
 
     <div class="container">
         <h1>Riwayat Browsing</h1>
-        <p style="text-align: center; color: #999;">Game yang baru saja Anda lihat</p>
+        <p class="subtitle">Game yang baru saja Anda jelajahi</p>
 
         <div id="historyGrid" class="history-grid">
-            <p class="empty-message">Memuat history...</p>
+            <p class="empty-message">Memuat riwayat...</p>
         </div>
 
-        <button class="btn-clear" onclick="clearHistory()">Hapus Semua History</button>
-        <a href="index.html" class="btn-back">← Kembali ke Store</a>
+        <div class="controls">
+            <button class="btn-clear" onclick="clearHistory()">🗑️ Hapus Semua Riwayat</button>
+            <a href="index.html" class="btn-back">← Kembali ke Store</a>
+        </div>
     </div>
 
     <script src="user.js"></script>
@@ -164,12 +230,11 @@
                 return;
             }
 
-            // Get history from localStorage (Stack - LIFO)
             const historyKey = `browsingHistory_${user.username}`;
             let history = JSON.parse(localStorage.getItem(historyKey)) || [];
 
             if (history.length === 0) {
-                historyGrid.innerHTML = `<p class="empty-message">Belum ada riwayat browsing.<br>Mulai jelajahi game di Store!</p>`;
+                historyGrid.innerHTML = `<p class="empty-message">Belum ada riwayat browsing.<br><span style="font-size:14px">Mulai jelajahi game di Store!</span></p>`;
                 return;
             }
 
@@ -177,7 +242,7 @@
             historyGrid.innerHTML = "";
 
             // Display in reverse order (most recent first)
-            history.reverse().forEach((item, index) => {
+            [...history].reverse().forEach((item) => {
                 const game = games.find(g => g.id === item.gameId);
                 if (!game) return;
 
@@ -187,17 +252,17 @@
                 const timeAgo = getTimeAgo(new Date(item.timestamp));
 
                 card.innerHTML = `
-      <img src="${game.image}" alt="${game.name}">
-      <div class="history-item-info">
-        <h3>${game.name}</h3>
-        <div class="price">Rp ${game.price.toLocaleString('id-ID')}</div>
-        <div class="viewed-time">Dilihat ${timeAgo}</div>
-        <div class="btn-container">
-          <button class="btn-action btn-buy" onclick="quickBuy(${game.id})">Beli</button>
-          <button class="btn-action btn-wishlist" onclick="quickWishlist(${game.id})">Wishlist</button>
-        </div>
-      </div>
-    `;
+                    <img src="${game.image}" alt="${game.name}">
+                    <div class="history-item-info">
+                        <h3>${game.name}</h3>
+                        <div class="price">Rp ${game.price.toLocaleString('id-ID')}</div>
+                        <div class="viewed-time">🕒 Dilihat ${timeAgo}</div>
+                        <div class="btn-container">
+                            <button class="btn-action btn-buy" onclick="quickBuy(${game.id})">Beli</button>
+                            <button class="btn-action btn-wishlist" onclick="quickWishlist(${game.id})">Wishlist</button>
+                        </div>
+                    </div>
+                `;
 
                 historyGrid.appendChild(card);
             });
@@ -205,10 +270,9 @@
 
         function getTimeAgo(date) {
             const seconds = Math.floor((new Date() - date) / 1000);
-
             if (seconds < 60) return "baru saja";
-            if (seconds < 3600) return Math.floor(seconds / 60) + " menit lalu";
-            if (seconds < 86400) return Math.floor(seconds / 3600) + " jam lalu";
+            if (seconds < 3600) return Math.floor(seconds / 60) + "m yang lalu";
+            if (seconds < 86400) return Math.floor(seconds / 3600) + "j yang lalu";
             return Math.floor(seconds / 86400) + " hari lalu";
         }
 
@@ -218,12 +282,10 @@
                 alert("Silakan login terlebih dahulu!");
                 return;
             }
-
             if (user.library.includes(gameId)) {
                 alert("Anda sudah memiliki game ini!");
                 return;
             }
-
             addToCart(gameId);
             window.location.href = "cart.html";
         }
@@ -235,12 +297,10 @@
         function clearHistory() {
             const user = getCurrentUser();
             if (!user) return;
-
             if (confirm("Hapus semua riwayat browsing?")) {
                 const historyKey = `browsingHistory_${user.username}`;
                 localStorage.removeItem(historyKey);
                 renderBrowsingHistory();
-                alert("Riwayat browsing telah dihapus!");
             }
         }
 

@@ -77,9 +77,10 @@ void PublisherRanking::loadPublisherGames() {
         if (pos == string::npos) continue;
         string username = line.substr(0, pos);
         
-        // Extract studio name (6th field)
+        // Extract studio name (field ke-14, index 13)
+        // Format: NIK|Nama|Alamat|DD|MM|YYYY|...|...|...|...|Job|...|Pass|Email|Studio|Country|Year
         size_t studioPos = 0;
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 14; i++) {  // Changed from 6 to 14
             studioPos = line.find('|', studioPos);
             if (studioPos == string::npos) break;
             studioPos++;
@@ -177,12 +178,25 @@ void PublisherRanking::showFullRankings() {
          << setw(10) << "Games" << endl;
     cout << string(66, '-') << endl;
     
-    // Get all publishers sorted by sales (descending)
-    vector<pair<int, PublisherRankData*> > rankings = salesRanking.getLargestN(totalPublishers);
+    // Get all publishers sorted by sales using AVL Tree
+    // We insert all publishers into a temporary AVL tree with adjusted keys
+    // Key = (sales * 1000 - index) to handle duplicates while maintaining sort order
+    AVLTree<int, PublisherRankData*> tempRanking;
+    int index = 0;
+    for (map<string, PublisherRankData*>::iterator it = publisherData.begin();
+         it != publisherData.end(); ++it, ++index) {
+        // Create unique key: higher sales = higher key, but unique within same sales
+        int uniqueKey = (it->second->totalSales * 1000) - index;
+        tempRanking.insert(uniqueKey, it->second);
+    }
+    
+    // Get ALL publishers from AVL tree (descending order)
+    vector<pair<int, PublisherRankData*> > rankings = tempRanking.getLargestN(totalPublishers);
     
     long long totalSales = 0;
     long long totalRevenue = 0;
     
+    // Display ALL publishers
     for (size_t i = 0; i < rankings.size(); i++) {
         PublisherRankData* data = rankings[i].second;
         

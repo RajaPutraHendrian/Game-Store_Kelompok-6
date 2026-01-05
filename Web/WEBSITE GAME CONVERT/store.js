@@ -17,7 +17,7 @@ const defaultGames = [
     price: 20000,
     category: "RPG",
     rating: 4.5,
-    image: "gmbar/space.jpg"
+    image: "gmbar/space.jpeg"
   },
   {
     id: 3,

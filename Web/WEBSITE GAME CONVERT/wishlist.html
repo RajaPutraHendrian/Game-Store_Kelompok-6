@@ -2,65 +2,165 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Wishlist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wishlist - GameStore</title>
 
 <style>
-body{
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#1e1e2f;
-  color:#e0e0e0;
-}
+  /* CSS ROOT & VARIABLES (Konsisten dengan index.html) */
+  :root {
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --danger: #ef4444;
+    --danger-hover: #dc2626;
+    --success: #10b981;
+  }
 
-a{color:#e0e0e0;text-decoration:none}
+  body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text);
+    line-height: 1.6;
+  }
 
-.navbar{
-  background:#2b2d42;
-  padding:10px 20px;
-}
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    height: 70px;
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-.navbar a{margin-right:15px}
+  .navbar a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+  }
 
-.wrapper{
-  max-width:1200px;
-  margin:auto;
-  padding:20px;
-}
+  .navbar a:hover {
+    color: var(--primary);
+  }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
-  gap:15px;
-}
+  .navbar a[href="wishlist.html"] {
+    color: var(--text);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 5px;
+  }
 
-.card{
-  background:#3a3d5c;
-  padding:12px;
-  border-radius:4px;
-}
+  /* MAIN WRAPPER */
+  .wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
 
-.card h4{
-  margin:0 0 8px 0;
-}
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--primary);
+    padding-left: 20px;
+  }
 
-.card button{
-  width:100%;
-  margin-top:6px;
-  padding:6px;
-  border:none;
-  cursor:pointer;
-  border-radius:3px;
-  color:#fff;
-}
+  /* GRID WISHLIST */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+  }
 
-.cart{background:#4ea8de}
-.remove{background:#e63946}
+  /* KARTU GAME (Sesuai dengan desain Store) */
+  .card {
+    background: var(--bg-card);
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.message{
-  grid-column:1 / -1;
-  text-align:center;
-  opacity:0.85;
-}
+  .card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Judul Game */
+  .card h4 {
+    margin: 10px 0 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* BUTTONS */
+  .card button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: 0.2s;
+  }
+
+  /* Tombol Tambah ke Keranjang */
+  .cart {
+    background: var(--primary);
+    color: #fff;
+  }
+
+  .cart:hover {
+    background: var(--primary-hover);
+  }
+
+  /* Tombol Hapus */
+  .remove {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    border: 1px solid rgba(239, 68, 68, 0.2) !important;
+  }
+
+  .remove:hover {
+    background: var(--danger);
+    color: #fff;
+  }
+
+  /* Pesan Kosong */
+  .message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 15px;
+    border: 2px dashed rgba(255, 255, 255, 0.1);
+    color: var(--text-muted);
+  }
+  
+  .message h3 { color: var(--text); margin-bottom: 10px; }
 </style>
 </head>
 
@@ -76,13 +176,16 @@ a{color:#e0e0e0;text-decoration:none}
 <div class="wrapper">
   <h2>Your Wishlist</h2>
 
-  <!-- Grid wishlist -->
   <div class="grid" id="wishlistGrid">
-    <!-- Diisi otomatis oleh wishlist.js -->
+    <div class="message">
+      <h3>Memuat wishlist...</h3>
+      <p>Silakan tunggu sebentar sementara kami menyiapkan daftar keinginan Anda.</p>
+    </div>
   </div>
 </div>
 
 <script src="user.js"></script>
 <script src="wishlist.js"></script>
+
 </body>
 </html>

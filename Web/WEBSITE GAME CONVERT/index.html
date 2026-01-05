@@ -1,286 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GameStore - Dari Kelompok 6</title>
+  <title>GalaxiGames | Gerbang Game Digital Premium</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
   <style>
-    /* CSS ROOT & VARIABLES */
     :root {
-      --primary: #4ea8de;
-      --bg-dark: #1e1e2f;
-      --bg-card: #2b2d42;
-      --text: #e0e0e0;
-      --accent: #f1c40f;
+      --primary: #8b5cf6;
+      --primary-bright: #a78bfa;
+      --primary-glow: rgba(139, 92, 246, 0.4);
+      --bg-dark: #020617; 
+      --bg-side: rgba(15, 23, 42, 0.8);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #fbbf24;
+      --danger: #f43f5e;
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       background: var(--bg-dark);
+      background-image: radial-gradient(circle at top right, rgba(139, 92, 246, 0.08), transparent);
       color: var(--text);
-      line-height: 1.6;
-    }
-
-    /* NAVBAR */
-    .navbar {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 5%;
-      background: var(--bg-card);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
-    .menu {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-
-    .menu a {
-      font-weight: 600;
-      font-size: 13px;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white;
-      transition: 0.3s;
-    }
-
-    .menu a:hover {
-      color: var(--primary);
-    }
-
-    /* SEARCH BOX */
-    .search input {
-      padding: 10px 20px;
-      background: #3a3d5c;
-      border: 1px solid #4a4d6d;
-      border-radius: 25px;
-      color: white;
-      width: 250px;
-      outline: none;
-      transition: 0.3s;
-    }
-
-    .search input:focus {
-      width: 300px;
-      border-color: var(--primary);
-    }
-
-    /* USER AREA */
-    .user {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .btn-auth {
-      padding: 8px 18px;
-      background: var(--primary);
-      border: none;
-      border-radius: 5px;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .btn-auth:hover {
-      opacity: 0.8;
-      transform: translateY(-2px);
-    }
-
-    /* MAIN CONTENT */
-    .wrapper {
-      max-width: 1200px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-
-    /* HERO BANNER */
-    .featured-banner {
-      height: 250px;
-      background: linear-gradient(135deg, rgba(78, 168, 222, 0.8), rgba(43, 45, 66, 0.9)),
-        url('https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200') center/cover;
-      border-radius: 15px;
+    /* --- SIDEBAR --- */
+    .sidebar {
+      width: 280px;
+      background: var(--bg-side);
+      backdrop-filter: blur(16px);
+      border-right: 1px solid var(--glass-border);
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding: 0 60px;
+      position: fixed;
+      height: 100vh;
+      z-index: 100;
+      padding: 20px;
+    }
+
+    .brand {
+      padding: 30px 15px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand .logo-icon {
+      background: linear-gradient(135deg, var(--primary), #d946ef);
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 20px var(--primary-glow);
+    }
+
+    .nav-menu { flex: 1; margin-top: 25px; }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      border-radius: 14px;
+      margin-bottom: 8px;
+      transition: var(--transition);
+    }
+
+    .nav-item:hover { background: rgba(255, 255, 255, 0.05); color: white; transform: translateX(5px); }
+    .nav-item.active { color: white; background: var(--primary); box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3); }
+
+    /* --- MAIN AREA --- */
+    .main-wrapper {
+      margin-left: 280px;
+      flex: 1;
+      padding: 40px 50px;
+      width: calc(100% - 280px);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 40px;
     }
 
-    /* GAME GRID & CARDS (PENTING UNTUK GAMBAR LOKAL) */
-    .game-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 30px;
+    .search-bar {
+      position: relative;
+      width: 450px;
     }
 
-    /* Rule CSS ini agar gambar di folder 'gmbar' tampil rapi */
-    .game-card img {
+    .search-bar input {
       width: 100%;
-      height: 160px;
-      object-fit: cover;
-      /* Memotong gambar agar pas, tidak lonjong */
-      border-radius: 8px 8px 0 0;
-      display: block;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--glass-border);
+      padding: 14px 16px 14px 50px;
+      border-radius: 16px;
+      color: white;
+      transition: var(--transition);
     }
 
-    /* ADMIN NAV STYLE */
-    #adminNav a {
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      padding: 5px 10px;
-      border-radius: 4px;
+    .search-bar input:focus { border-color: var(--primary); outline: none; background: rgba(255, 255, 255, 0.07); }
+    .search-bar i { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+
+    .user-auth-card {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(255,255,255,0.03);
+      padding: 6px 6px 6px 20px;
+      border-radius: 50px;
+      border: 1px solid var(--glass-border);
     }
 
-    #adminNav a:hover {
-      background: var(--accent);
-      color: black;
+    /* --- FAST AUTO-SLIDE HERO --- */
+    .hero-slider-container {
+      height: 420px;
+      border-radius: 32px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 50px;
+      border: 1px solid var(--glass-border);
+    }
+
+    .hero-slide {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 0 80px;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transform: scale(1.08);
+      /* Kecepatan transisi dipercepat menjadi 0.8 detik */
+      transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+    }
+
+    .hero-slide.active { opacity: 1; transform: scale(1); pointer-events: auto; z-index: 1; }
+
+    .hero-content { max-width: 600px; opacity: 0; transform: translateY(20px); transition: all 0.5s 0.3s; }
+    .hero-slide.active .hero-content { opacity: 1; transform: translateY(0); }
+
+    .hero-content h1 { font-family: 'Plus Jakarta Sans'; font-size: 52px; font-weight: 800; margin-bottom: 15px; line-height: 1.1; }
+    .hero-content p { font-size: 18px; color: var(--text-muted); margin-bottom: 30px; }
+
+    .badge-promo {
+      background: var(--primary); color: white;
+      padding: 5px 15px; border-radius: 8px; font-weight: 800; font-size: 11px;
+      margin-bottom: 20px; display: inline-block; letter-spacing: 1px;
+    }
+
+    .slider-dots {
+      position: absolute; bottom: 30px; left: 80px;
+      display: flex; gap: 10px; z-index: 10;
+    }
+
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.2); cursor: pointer; transition: 0.3s; }
+    .dot.active { background: var(--primary); width: 30px; border-radius: 10px; }
+
+    /* --- FILTER BOX --- */
+    .discovery-box {
+      background: rgba(15, 23, 42, 0.5);
+      padding: 30px;
+      border-radius: 24px;
+      border: 1px solid var(--glass-border);
+      margin-bottom: 50px;
+    }
+
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      align-items: flex-end;
+    }
+
+    .input-custom {
+      width: 100%; background: var(--bg-dark); border: 1px solid var(--glass-border);
+      padding: 12px; border-radius: 12px; color: white; outline: none;
+    }
+
+    .btn-action {
+      background: var(--primary); color: white; border: none;
+      padding: 14px 28px; border-radius: 14px; font-weight: 700;
+      cursor: pointer; display: flex; align-items: center; gap: 10px;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover { transform: translateY(-4px); box-shadow: 0 10px 20px var(--primary-glow); }
+
+    .game-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+
+    @media (max-width: 1100px) {
+      .sidebar { width: 90px; }
+      .brand span, .nav-item span { display: none; }
+      .main-wrapper { margin-left: 90px; width: calc(100% - 90px); }
     }
   </style>
 </head>
 
 <body>
 
-  <nav class="navbar">
-    <div class="menu">
-      <a href="index.html">Store</a>
-      <a href="wishlist.html">Wishlist</a>
-      <a href="cart.html">Keranjang</a>
-      <a href="library.html">Library</a>
-      <a href="history.html">History</a>
-      <span id="adminNav"></span>
-    </div>
+  <aside class="sidebar">
+    <a href="index.html" class="brand">
+      <div class="logo-icon"><i data-lucide="rocket" size="22" color="white"></i></div>
+      <span>GAMESTORE R.N.A 6</span>
+    </a>
+    
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item active"><i data-lucide="layout"></i> <span>Store</span></a>
+      <a href="wishlist.html" class="nav-item"><i data-lucide="heart"></i> <span>Wishlist</span></a>
+      <a href="cart.html" class="nav-item"><i data-lucide="shopping-cart"></i> <span>Keranjang</span></a>
+      <a href="library.html" class="nav-item"><i data-lucide="gamepad-2"></i> <span>Library</span></a>
+      <a href="history.html" class="nav-item"><i data-lucide="history"></i> <span>Riwayat</span></a>
+      <div id="adminArea"></div>
+    </nav>
+  </aside>
 
-    <div class="search">
-      <input type="text" id="searchInput" placeholder="Cari game favoritmu...">
-    </div>
-
-    <div class="user" id="userArea">
-    </div>
-  </nav>
-
-  <div class="wrapper">
-    <header class="featured-banner">
-      <h1 style="margin:0; font-size: 36px;">Holiday Season Sale</h1>
-      <p style="margin:10px 0 0 0; font-size: 18px;">Dapatkan harga spesial untuk game terbaik tahun ini.</p>
+  <div class="main-wrapper">
+    <header class="header-top">
+      <div class="search-bar">
+        <i data-lucide="search"></i>
+        <input type="text" id="searchInput" placeholder="Cari game seru di sini...">
+      </div>
+      <div id="authContainer"></div>
     </header>
 
     <main>
-      <div
-        style="font-size: 24px; font-weight: bold; margin-bottom: 25px; border-left: 5px solid var(--primary); padding-left: 15px;">
-        Game Populer
-      </div>
-
-      <!-- FILTERS SECTION -->
-      <div style="background: var(--bg-card); border-radius: 10px; padding: 20px; margin-bottom: 30px;">
-        <h3 style="margin-top: 0; color: var(--primary); margin-bottom: 15px;">🔍 Filters & Sort</h3>
-
-        <div
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; align-items: end;">
-
-          <!-- Price Range -->
-          <div>
-            <label style="display: block; margin-bottom: 8px; font-size: 14px; color: #aaa;">Price Range</label>
-            <div style="display: flex; gap: 10px; align-items: center;">
-              <input type="number" id="priceMin" placeholder="Min" value="0" min="0"
-                style="width: 100%; padding: 8px; background: #3a3d5c; border: 1px solid #4a4d6d; border-radius: 5px; color: white;">
-              <span style="color: #aaa;">-</span>
-              <input type="number" id="priceMax" placeholder="Max" value="100000" min="0"
-                style="width: 100%; padding: 8px; background: #3a3d5c; border: 1px solid #4a4d6d; border-radius: 5px; color: white;">
+      <section class="hero-slider-container">
+        <div class="hero-slider-wrapper" id="heroSlider">
+          
+          <div class="hero-slide active" style="background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.9) 30%, transparent), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200');">
+            <div class="hero-content">
+              <span class="badge-promo">NEW RELEASE</span>
+              <h1>Perluas Game Digital Anda.</h1>
+              <p>Temukan ribuan judul game premium dengan harga terbaik dan Dari Kelompok 6 Akan Sediakan Semua.</p>
+              <button class="btn-action">Eksplorasi Sekarang <i data-lucide="chevron-right"></i></button>
             </div>
           </div>
 
-          <!-- Sort -->
-          <div>
-            <label style="display: block; margin-bottom: 8px; font-size: 14px; color: #aaa;">Sort By</label>
-            <select id="sortBy"
-              style="width: 100%; padding: 10px; background: #3a3d5c; border: 1px solid #4a4d6d; border-radius: 5px; color: white; cursor: pointer;">
-              <option value="default">Default</option>
-              <option value="price-asc">Price: Low to High</option>
-              <option value="price-desc">Price: High to Low</option>
-              <option value="rating-desc">Rating: High to Low</option>
-              <option value="name-asc">Name: A-Z</option>
+          <div class="hero-slide" style="background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.9) 30%, transparent), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200');">
+            <div class="hero-content">
+              <span class="badge-promo" style="background: var(--accent); color: black;">DISKON BESAR</span>
+              <h1>Koleksi Harga Mahasiswa.</h1>
+              <p>Dapatkan potongan harga hingga 30% untuk game populer untuk membership.</p>
+              <button class="btn-action">Lihat Penawaran <i data-lucide="percent"></i></button>
+            </div>
+          </div>
+
+          <div class="hero-slide" style="background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.9) 30%, transparent), url('https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200');">
+            <div class="hero-content">
+              <span class="badge-promo" style="background: #10b981;">FREE TO PLAY</span>
+              <h1>Mainkan Gratis Sekarang Juga.</h1>
+              <p>Nikmati ratusan game berkualitas tinggi tanpa biaya sepeserpun.</p>
+              <button class="btn-action">Main Gratis <i data-lucide="play"></i></button>
+            </div>
+          </div>
+
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <section class="discovery-box">
+        <div class="filter-grid">
+          <div class="filter-group">
+            <label style="font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 10px; display: block;">Rentang Harga</label>
+            <div style="display: flex; gap: 10px;">
+              <input type="number" id="priceMin" class="input-custom" placeholder="Min">
+              <input type="number" id="priceMax" class="input-custom" placeholder="Max">
+            </div>
+          </div>
+          <div class="filter-group">
+            <label style="font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 10px; display: block;">Urutan</label>
+            <select id="sortBy" class="input-custom">
+              <option value="default">Terbaru</option>
+              <option value="price-asc">Harga Terendah</option>
+              <option value="price-desc">Harga Tertinggi</option>
             </select>
           </div>
-
-          <!-- Free Games Only -->
-          <div>
-            <label
-              style="display: flex; align-items: center; gap: 10px; cursor: pointer; background: rgba(78, 168, 222, 0.1); padding: 10px; border-radius: 5px;">
-              <input type="checkbox" id="freeOnly" style="width: 18px; height: 18px; cursor: pointer;">
-              <span style="font-size: 14px; font-weight: bold;">Free Games Only</span>
+          <div class="filter-group">
+            <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px; background: rgba(255,255,255,0.02); border-radius: 12px; border: 1px solid var(--glass-border);">
+              <input type="checkbox" id="freeOnly" style="width: 18px; height: 18px; accent-color: var(--primary);">
+              <span style="font-size: 14px;">Hanya Game Gratis</span>
             </label>
           </div>
-
-          <!-- Apply & Reset Buttons -->
           <div style="display: flex; gap: 10px;">
-            <button onclick="applyFilters()"
-              style="flex: 1; padding: 10px; background: var(--primary); color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
-              Apply
-            </button>
-            <button onclick="resetFilters()"
-              style="padding: 10px 15px; background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 5px; font-weight: bold; cursor: pointer;">
-              Reset
-            </button>
+            <button onclick="applyFilters()" class="btn-action" style="flex: 2; justify-content: center;">Terapkan</button>
+            <button onclick="resetFilters()" class="input-custom" style="flex: 1; display: flex; align-items: center; justify-content: center;"><i data-lucide="rotate-ccw" size="18"></i></button>
           </div>
         </div>
+      </section>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px;">
+        <h2 style="font-family: 'Plus Jakarta Sans'; font-size: 28px;">Rekomendasi Utama</h2>
+        <i data-lucide="sparkles" color="var(--accent)"></i>
       </div>
 
       <div class="game-grid" id="gameGrid">
-        <p style="text-align: center; grid-column: 1/-1;">Memuat katalog game...</p>
+        <p style="text-align: center; grid-column: 1/-1; padding: 80px; color: var(--text-muted);">Memuat game terbaru...</p>
       </div>
     </main>
   </div>
-
-  <footer style="text-align: center; padding: 40px; color: #666; font-size: 14px;">
-    &copy; 2025 GameStore Dari Kelompok 6.
-  </footer>
 
   <script src="user.js"></script>
   <script src="store.js"></script>
 
   <script>
-    /**
-     * Mengatur tampilan Navbar berdasarkan status Login
-     */
-    function updateNavbar() {
-      const userArea = document.getElementById("userArea");
-      const adminNav = document.getElementById("adminNav");
+    // --- AUTH & UI ---
+    function initApp() {
+      const authContainer = document.getElementById("authContainer");
+      const adminArea = document.getElementById("adminArea");
       const user = typeof getCurrentUser === "function" ? getCurrentUser() : null;
 
       if (user) {
-        userArea.innerHTML = `
-      <span style="color:var(--primary); font-weight:bold;">👤 ${user.username.toUpperCase()}</span>
-      <button class="btn-auth" style="background:#e63946" onclick="logout()">LOGOUT</button>
-    `;
-
-        if (user.role === 'admin') {
-          adminNav.innerHTML = `<a href="admin.html">ADMIN PANEL</a>`;
-        } else if (user.role === 'publisher') {
-          adminNav.innerHTML = `<a href="publisher.html" style="color:#f1c40f; border:1px solid #f1c40f; padding:5px 10px; border-radius:4px;">PUBLISHER DASHBOARD</a>`;
-        } else {
-          adminNav.innerHTML = "";
+        authContainer.innerHTML = `
+          <div class="user-auth-card">
+            <div style="text-align: right">
+              <div style="font-size: 14px; font-weight: 700;">${user.username}</div>
+              <div style="font-size: 10px; font-weight: 800; color: var(--primary); text-transform: uppercase;">${user.role}</div>
+            </div>
+            <button onclick="handleLogout()" style="width: 38px; height: 38px; border-radius: 50%; background: var(--danger); border: none; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+              <i data-lucide="power" size="18"></i>
+            </button>
+          </div>
+        `;
+        if (user.role === 'admin' || user.role === 'publisher') {
+          adminArea.innerHTML = `
+            <div style="padding: 20px 15px 10px; font-size: 11px; font-weight: 800; color: var(--text-muted); letter-spacing: 1px;">MANAJEMEN</div>
+            <a href="${user.role}.html" class="nav-item" style="color: var(--accent); border: 1px dashed rgba(251, 191, 36, 0.3);">
+              <i data-lucide="shield"></i> <span>PANEL ${user.role.toUpperCase()}</span>
+            </a>
+          `;
         }
       } else {
-        userArea.innerHTML = `
-      <button class="btn-auth" onclick="window.location.href='auth.html'">LOGIN / JOIN</button>
-    `;
-        adminNav.innerHTML = "";
+        authContainer.innerHTML = `<a href="auth.html" class="btn-action"><i data-lucide="user"></i> Masuk / Daftar</a>`;
+      }
+      lucide.createIcons();
+    }
+
+    function handleLogout() {
+      if (confirm("Ingin keluar dari GalaxiGames?")) {
+        if (typeof logout === "function") { logout(); window.location.reload(); }
       }
     }
 
-    // Jalankan saat halaman dimuat
-    document.addEventListener("DOMContentLoaded", updateNavbar);
+    // --- FAST AUTO SLIDER LOGIC ---
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    // Durasi pindah otomatis: 3000ms (3 detik)
+    const SLIDE_INTERVAL = 3000; 
+
+    function showSlide(n) {
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      slides[n].classList.add('active');
+      dots[n].classList.add('active');
+    }
+
+    let autoSlide = setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, SLIDE_INTERVAL);
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => { 
+        currentSlide = i; 
+        showSlide(i); 
+        // Reset timer ketika user klik manual
+        clearInterval(autoSlide);
+        autoSlide = setInterval(() => {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }, SLIDE_INTERVAL);
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", initApp);
   </script>
-
 </body>
-
 </html>
