@@ -1,0 +1,50 @@
+Minecraft|349000|Sandbox|0
+Terraria|139000|Adventure|2
+Starbound|139000|Adventure|0
+No Man's Sky|559000|Adventure|0
+Astroneer|279000|Sandbox|0
+Space Engineers|319000|Sandbox|0
+Kerbal Space Program|399000|Simulation|0
+Empyrion - Galactic Survival|189000|Survival|0
+Scrap Mechanic|189000|Sandbox|0
+Besiege|189000|Sandbox|0
+Main Assembly|189000|Sandbox|0
+Trailmakers|279000|Sandbox|0
+Raft|189000|Survival|0
+Core Keeper|119000|Sandbox|0
+Grounded|349000|Survival|0
+Satisfactory|349000|Simulation|0
+Dyson Sphere Program|189000|Simulation|0
+Hydroneer|189000|Simulation|0
+Medieval Dynasty|349000|Survival|0
+Manor Lords|349000|Strategy|1
+Vintage Story|249000|Survival|0
+Eco|349000|Simulation|0
+Avorion|229000|Sandbox|0
+Stationeers|249000|Survival|0
+Muck|0|Survival|0
+Raft|189000|Survival|0
+The Planet Crafter|229000|Survival|0
+Voxel Tycoon|279000|Simulation|0
+Factory Town|189000|Simulation|0
+Automation Empire|189000|Simulation|0
+Builderment|0|Simulation|0
+shapez|39000|Puzzle|0
+shapez 2|89000|Puzzle|0
+Production Line|159000|Simulation|0
+Little Big Workshop|189000|Simulation|0
+Autonauts|159000|Simulation|0
+Kubifaktorium|159000|Strategy|0
+Foundations|279000|Strategy|0
+Workers & Resources|319000|Simulation|0
+Captain of Industry|279000|Simulation|0
+MineColonies|0|Sandbox|0
+Create: Astral|0|Sandbox|0
+Vintage Story|249000|Survival|0
+7 Days to Die|319000|Survival|2
+Conan Exiles|399000|Survival|0
+Rust|249000|Survival|1
+DayZ|449000|Survival|0
+Hurtworld|249000|Survival|0
+Icarus|279000|Survival|0
+The Infected|159000|Survival|0

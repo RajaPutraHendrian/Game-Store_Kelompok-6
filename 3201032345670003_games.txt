@@ -1,0 +1,50 @@
+Undertale|99000|RPG|2
+Deltarune|0|RPG|0
+Cuphead|189000|Platformer|0
+Ori and the Blind Forest|139000|Platformer|1
+Ori and the Will of the Wisps|279000|Platformer|2
+Shovel Knight|139000|Platformer|0
+A Hat in Time|279000|Platformer|0
+Spelunky 2|189000|Platformer|1
+Super Meat Boy|139000|Platformer|1
+The Messenger|189000|Platformer|0
+Blasphemous|229000|Platformer|3
+Salt and Sanctuary|159000|RPG|0
+Rogue Legacy 2|249000|Roguelike|1
+Risk of Rain 2|229000|Roguelike|0
+Enter the Gungeon|139000|Roguelike|0
+Nuclear Throne|119000|Roguelike|0
+Slay the Spire|229000|Card Game|0
+Monster Train|249000|Card Game|0
+Darkest Dungeon|229000|RPG|0
+FTL: Faster Than Light|99000|Strategy|0
+Into the Breach|139000|Strategy|0
+Return of the Obra Dinn|189000|Puzzle|0
+The Witness|369000|Puzzle|0
+Braid|139000|Puzzle|0
+Fez|99000|Platformer|0
+Limbo|99000|Platformer|0
+Inside|189000|Platformer|0
+Little Nightmares|189000|Horror|0
+Little Nightmares II|279000|Horror|0
+Gris|159000|Adventure|0
+Journey|139000|Adventure|0
+Abzu|189000|Adventure|0
+Firewatch|189000|Adventure|0
+What Remains of Edith Finch|189000|Adventure|0
+Gone Home|189000|Adventure|0
+Dear Esther|99000|Adventure|0
+The Stanley Parable|139000|Adventure|0
+The Beginners Guide|99000|Adventure|0
+Superliminal|189000|Puzzle|0
+Antichamber|189000|Puzzle|0
+The Talos Principle|379000|Puzzle|0
+Portal Knights|189000|Adventure|0
+Terraria: Journey's End|139000|Adventure|0
+Axiom Verge|189000|Platformer|0
+Axiom Verge 2|279000|Platformer|0
+Katana ZERO|139000|Action|0
+Hotline Miami|89000|Action|0
+Hotline Miami 2|139000|Action|0
+Not For Broadcast|229000|Simulation|0
+Papers, Please|99000|Puzzle|0

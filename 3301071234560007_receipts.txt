@@ -1,0 +1,236 @@
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391607
+Tanggal/Waktu : 30/12/2025 09:18:04
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : Half-Life 2
+----------------------------------------
+  Harga Asli  : Rp 189000
+  TOTAL BAYAR : Rp 189000
+========================================
+METODE PEMBAYARAN:
+  QRIS - OVO
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391111
+Tanggal/Waktu : 03/12/2025 02:35:44
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : Skyrim Special Edition
+----------------------------------------
+  Harga Asli  : Rp 799000
+  Diskon 30%  : -Rp 239700
+  --------------------
+  TOTAL BAYAR : Rp 559300
+========================================
+METODE PEMBAYARAN:
+  QRIS - GoPay
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300397463
+Tanggal/Waktu : 03/12/2025 14:50:38
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : Resident Evil 4
+----------------------------------------
+  Harga Asli  : Rp 349000
+  TOTAL BAYAR : Rp 349000
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300395404
+Tanggal/Waktu : 15/10/2025 07:27:24
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : Terraria
+----------------------------------------
+  Harga Asli  : Rp 229000
+  TOTAL BAYAR : Rp 229000
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391512
+Tanggal/Waktu : 08/10/2025 19:05:18
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : Titanfall 2
+----------------------------------------
+  Harga Asli  : Rp 699000
+  TOTAL BAYAR : Rp 699000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391951
+Tanggal/Waktu : 23/12/2025 00:03:41
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : Blasphemous
+----------------------------------------
+  Harga Asli  : Rp 159000
+  Diskon 30%  : -Rp 47700
+  --------------------
+  TOTAL BAYAR : Rp 111300
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300393897
+Tanggal/Waktu : 11/10/2025 21:56:39
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : Total War: WARHAMMER III
+----------------------------------------
+  Harga Asli  : Rp 229000
+  TOTAL BAYAR : Rp 229000
+========================================
+METODE PEMBAYARAN:
+  QRIS - DANA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391692
+Tanggal/Waktu : 02/11/2025 05:20:04
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : DOOM (2016)
+----------------------------------------
+  Harga Asli  : Rp 89000
+  TOTAL BAYAR : Rp 89000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BNI
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300394453
+Tanggal/Waktu : 19/12/2025 17:10:44
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : ARK: Survival Evolved
+----------------------------------------
+  Harga Asli  : Rp 159000
+  TOTAL BAYAR : Rp 159000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391673
+Tanggal/Waktu : 22/12/2025 18:56:44
+Username      : 3301071234560007
+========================================
+DETAIL PEMBELIAN:
+  Game        : Overcooked 2
+----------------------------------------
+  Harga Asli  : Rp 499000
+  TOTAL BAYAR : Rp 499000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank Mandiri
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+

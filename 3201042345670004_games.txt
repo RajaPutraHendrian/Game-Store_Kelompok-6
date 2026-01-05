@@ -1,0 +1,50 @@
+Outlast|189000|Horror|0
+Outlast 2|279000|Horror|2
+Amnesia: The Dark Descent|189000|Horror|2
+Amnesia: Rebirth|279000|Horror|0
+SOMA|279000|Horror|1
+Layers of Fear|189000|Horror|2
+Layers of Fear 2|279000|Horror|0
+The Evil Within|189000|Horror|0
+The Evil Within 2|399000|Horror|0
+Alien: Isolation|399000|Horror|2
+Resident Evil 7|279000|Horror|0
+Resident Evil 4|189000|Horror|2
+Resident Evil 3|399000|Horror|0
+Dead Space|559000|Horror|2
+Dead Space 2|189000|Horror|0
+Dead Space 3|189000|Horror|0
+The Callisto Protocol|699000|Horror|0
+Dying Light|279000|Action|0
+Dying Light 2|699000|Action|0
+Metro 2033 Redux|189000|Action|0
+Metro: Last Light Redux|189000|Action|0
+Metro Exodus|399000|Action|1
+S.T.A.L.K.E.R.: Shadow of Chernobyl|139000|Action|0
+S.T.A.L.K.E.R.: Call of Pripyat|139000|Action|0
+S.T.A.L.K.E.R.: Clear Sky|99000|Action|0
+The Long Dark|349000|Survival|0
+Green Hell|189000|Survival|0
+Maneater|399000|Action|0
+Grounded|349000|Survival|0
+Sons Of The Forest|299000|Survival|0
+Subnautica: Below Zero|279000|Adventure|0
+Stranded Deep|189000|Survival|0
+Raft|189000|Survival|0
+The Solus Project|189000|Adventure|0
+Visage|349000|Horror|0
+Madison|349000|Horror|0
+MADiSON VR|349000|Horror|0
+Tormented Souls|189000|Horror|0
+Song of Horror|279000|Horror|0
+Scorn|349000|Horror|0
+Signalis|189000|Horror|0
+Fear the Spotlight|99000|Horror|0
+Mundaun|189000|Horror|0
+Still Wakes the Deep|349000|Horror|0
+The Shore|139000|Horror|0
+Daymare: 1998|279000|Horror|0
+Remothered: Tormented Fathers|279000|Horror|0
+Remothered: Broken Porcelain|279000|Horror|0
+Infliction|139000|Horror|0
+Home Sweet Home|139000|Horror|0

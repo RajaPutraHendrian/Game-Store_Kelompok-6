@@ -1,0 +1,50 @@
+Counter-Strike 2|0|Action|0
+Dota 2|0|MOBA|0
+PUBG: BATTLEGROUNDS|0|Battle Royale|2
+Apex Legends|0|Battle Royale|3
+Grand Theft Auto V|319000|Action|1
+Team Fortress 2|0|Action|0
+Rust|249000|Survival|1
+Terraria|139000|Adventure|2
+The Witcher 3: Wild Hunt|279000|RPG|1
+Red Dead Redemption 2|799000|Action|0
+Elden Ring|699000|RPG|0
+Cyberpunk 2077|599000|RPG|1
+Stardew Valley|89000|Simulation|1
+Minecraft|349000|Sandbox|0
+Among Us|45000|Party|1
+Fall Guys|0|Party|2
+Rocket League|0|Sports|0
+Left 4 Dead 2|99000|Action|0
+Portal 2|99000|Puzzle|0
+Half-Life 2|99000|Action|2
+Garry's Mod|99000|Sandbox|0
+ARK: Survival Evolved|319000|Survival|2
+7 Days to Die|319000|Survival|2
+The Forest|159000|Survival|0
+Valheim|139000|Survival|1
+Don't Starve Together|139000|Survival|1
+Dead by Daylight|189000|Horror|0
+Phasmophobia|119000|Horror|0
+PAYDAY 2|99000|Action|0
+Warframe|0|Action|2
+Path of Exile|0|RPG|0
+Lost Ark|0|MMORPG|0
+Guild Wars 2|0|MMORPG|0
+Final Fantasy XIV|279000|MMORPG|0
+Monster Hunter: World|399000|Action|2
+Dark Souls III|319000|RPG|1
+SEKIRO: Shadows Die Twice|699000|Action|0
+Resident Evil Village|599000|Horror|3
+Resident Evil 2|399000|Horror|1
+Hades|229000|Roguelike|1
+Hollow Knight|139000|Adventure|0
+Celeste|189000|Platformer|0
+Dead Cells|229000|Roguelike|2
+Binding of Isaac: Rebirth|139000|Roguelike|0
+Factorio|319000|Simulation|3
+RimWorld|349000|Simulation|1
+Project Zomboid|159000|Survival|0
+Subnautica|279000|Adventure|0
+Deep Rock Galactic|279000|Action|1
+Sea of Thieves|279000|Adventure|0

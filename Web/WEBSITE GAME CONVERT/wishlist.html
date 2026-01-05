@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wishlist</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#1e1e2f;
+  color:#e0e0e0;
+}
+
+a{color:#e0e0e0;text-decoration:none}
+
+.navbar{
+  background:#2b2d42;
+  padding:10px 20px;
+}
+
+.navbar a{margin-right:15px}
+
+.wrapper{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:15px;
+}
+
+.card{
+  background:#3a3d5c;
+  padding:12px;
+  border-radius:4px;
+}
+
+.card h4{
+  margin:0 0 8px 0;
+}
+
+.card button{
+  width:100%;
+  margin-top:6px;
+  padding:6px;
+  border:none;
+  cursor:pointer;
+  border-radius:3px;
+  color:#fff;
+}
+
+.cart{background:#4ea8de}
+.remove{background:#e63946}
+
+.message{
+  grid-column:1 / -1;
+  text-align:center;
+  opacity:0.85;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="index.html">STORE</a>
+  <a href="wishlist.html">WISHLIST</a>
+  <a href="cart.html">KERANJANG</a>
+  <a href="library.html">LIBRARY</a>
+</div>
+
+<div class="wrapper">
+  <h2>Your Wishlist</h2>
+
+  <!-- Grid wishlist -->
+  <div class="grid" id="wishlistGrid">
+    <!-- Diisi otomatis oleh wishlist.js -->
+  </div>
+</div>
+
+<script src="user.js"></script>
+<script src="wishlist.js"></script>
+</body>
+</html>

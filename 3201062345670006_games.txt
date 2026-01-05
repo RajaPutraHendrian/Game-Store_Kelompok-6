@@ -1,0 +1,50 @@
+Call of Duty: Modern Warfare II|799000|Action|0
+Call of Duty: Black Ops|399000|Action|0
+Battlefield V|799000|Action|1
+Battlefield 1|189000|Action|0
+Battlefield 4|189000|Action|0
+Titanfall 2|279000|Action|2
+Destiny 2|0|Action|0
+The Division 2|559000|Action|0
+Rainbow Six Siege|189000|Action|1
+Ghost Recon Wildlands|499000|Action|0
+Ghost Recon Breakpoint|699000|Action|0
+Far Cry 5|279000|Action|0
+Far Cry 6|799000|Action|0
+Far Cry 3|139000|Action|0
+Far Cry 4|189000|Action|0
+Crysis Remastered|279000|Action|0
+Crysis 2 Remastered|279000|Action|0
+Crysis 3 Remastered|279000|Action|0
+Halo: Master Chief Collection|399000|Action|0
+Halo Infinite|0|Action|0
+DOOM Eternal|599000|Action|0
+DOOM (2016)|189000|Action|1
+Wolfenstein II|399000|Action|0
+Wolfenstein: The New Order|189000|Action|0
+Prey|279000|Action|0
+Dishonored 2|399000|Action|3
+Dishonored|99000|Action|0
+Deathloop|699000|Action|0
+Bioshock Infinite|279000|Action|0
+Bioshock Remastered|189000|Action|0
+BioShock 2 Remastered|189000|Action|0
+Borderlands 3|599000|Action|2
+Borderlands 2|189000|Action|0
+Borderlands: Pre-Sequel|399000|Action|0
+Tiny Tina's Wonderlands|699000|Action|0
+GTFO|349000|Action|0
+Ready or Not|349000|Action|0
+Insurgency: Sandstorm|279000|Action|0
+Squad|449000|Action|0
+Hell Let Loose|399000|Action|0
+Post Scriptum|399000|Action|0
+Escape from Tarkov|449000|Action|0
+Hunt: Showdown|399000|Action|0
+Vermintide 2|279000|Action|0
+Back 4 Blood|699000|Action|0
+World War Z|379000|Action|0
+Killing Floor 2|279000|Action|0
+Serious Sam 4|399000|Action|0
+Shadow Warrior 2|379000|Action|0
+Shadow Warrior 3|499000|Action|0

@@ -1,0 +1,236 @@
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300397732
+Tanggal/Waktu : 07/10/2025 12:10:22
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Persona 4 Golden
+----------------------------------------
+  Harga Asli  : Rp 249000
+  TOTAL BAYAR : Rp 249000
+========================================
+METODE PEMBAYARAN:
+  QRIS - GoPay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300398183
+Tanggal/Waktu : 18/10/2025 11:51:50
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Warframe
+----------------------------------------
+  Harga Asli  : Rp 0
+  TOTAL BAYAR : Rp 0
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Mastercard
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300396283
+Tanggal/Waktu : 29/10/2025 13:42:59
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Dead Space
+----------------------------------------
+  Harga Asli  : Rp 499000
+  TOTAL BAYAR : Rp 499000
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Mastercard
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391071
+Tanggal/Waktu : 23/10/2025 12:49:46
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Borderlands 3
+----------------------------------------
+  Harga Asli  : Rp 699000
+  TOTAL BAYAR : Rp 699000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BNI
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300398293
+Tanggal/Waktu : 15/11/2025 20:28:32
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Blasphemous
+----------------------------------------
+  Harga Asli  : Rp 799000
+  TOTAL BAYAR : Rp 799000
+========================================
+METODE PEMBAYARAN:
+  E-Wallet - ShopeePay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300399344
+Tanggal/Waktu : 12/11/2025 12:28:42
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Fall Guys
+----------------------------------------
+  Harga Asli  : Rp 0
+  TOTAL BAYAR : Rp 0
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300395187
+Tanggal/Waktu : 21/10/2025 04:10:42
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Undertale
+----------------------------------------
+  Harga Asli  : Rp 279000
+  Diskon 30%  : -Rp 83700
+  --------------------
+  TOTAL BAYAR : Rp 195300
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BNI
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300395135
+Tanggal/Waktu : 28/10/2025 01:51:47
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Apex Legends
+----------------------------------------
+  Harga Asli  : Rp 45000
+  TOTAL BAYAR : Rp 45000
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Mastercard
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300398472
+Tanggal/Waktu : 25/10/2025 10:53:49
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Among Us
+----------------------------------------
+  Harga Asli  : Rp 699000
+  Diskon 30%  : -Rp 209701
+  --------------------
+  TOTAL BAYAR : Rp 489299
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BCA
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300394007
+Tanggal/Waktu : 08/12/2025 08:38:05
+Username      : 3301021234560002
+========================================
+DETAIL PEMBELIAN:
+  Game        : Amnesia: The Dark Descent
+----------------------------------------
+  Harga Asli  : Rp 279000
+  TOTAL BAYAR : Rp 279000
+========================================
+METODE PEMBAYARAN:
+  QRIS - OVO
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+

@@ -1,0 +1,50 @@
+Cities: Skylines|279000|Simulation|1
+Europa Universalis IV|399000|Strategy|0
+Hearts of Iron IV|399000|Strategy|0
+Stellaris|399000|Strategy|2
+Crusader Kings III|499000|Strategy|1
+Total War: WARHAMMER III|599000|Strategy|2
+XCOM 2|319000|Strategy|1
+Sid Meier's Civilization VI|599000|Strategy|0
+Age of Empires IV|399000|Strategy|1
+Age of Empires II: Definitive Edition|199000|Strategy|0
+Company of Heroes 3|559000|Strategy|0
+Frostpunk|279000|Strategy|1
+They Are Billions|279000|Strategy|0
+Northgard|279000|Strategy|0
+Banished|189000|Simulation|0
+Transport Fever 2|349000|Simulation|0
+Planet Coaster|459000|Simulation|0
+Planet Zoo|459000|Simulation|0
+Jurassic World Evolution 2|559000|Simulation|0
+Two Point Hospital|349000|Simulation|0
+Prison Architect|279000|Simulation|0
+Oxygen Not Included|249000|Simulation|0
+Surviving Mars|279000|Simulation|0
+Tropico 6|499000|Simulation|0
+Anno 1800|559000|Strategy|0
+Farthest Frontier|339000|Strategy|0
+Victoria 3|499000|Strategy|0
+Imperator: Rome|399000|Strategy|0
+Crusader Kings II|399000|Strategy|0
+Endless Space 2|399000|Strategy|0
+Endless Legend|399000|Strategy|0
+Humankind|559000|Strategy|0
+Old World|399000|Strategy|0
+Cliff Empire|139000|Simulation|0
+SimCity 4|189000|Simulation|0
+Parkitect|279000|Simulation|0
+Roller Coaster Tycoon 3|189000|Simulation|0
+Zoo Tycoon|189000|Simulation|0
+Software Inc|189000|Simulation|0
+Game Dev Tycoon|99000|Simulation|0
+Mad Games Tycoon 2|189000|Simulation|0
+Foundation|279000|Strategy|0
+Against the Storm|249000|Strategy|0
+Diplomacy is Not an Option|249000|Strategy|0
+Kingdoms Reborn|249000|Strategy|0
+Settlement Survival|139000|Strategy|0
+Going Medieval|249000|Strategy|0
+Songs of Syx|139000|Strategy|0
+Manor Lords|349000|Strategy|1
+Pioneers of Pagonia|349000|Strategy|0

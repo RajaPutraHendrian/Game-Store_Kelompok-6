@@ -1,0 +1,50 @@
+World of Warcraft|0|MMORPG|0
+Final Fantasy XIV|279000|MMORPG|0
+Elder Scrolls Online|189000|MMORPG|0
+Guild Wars 2|0|MMORPG|0
+Black Desert Online|99000|MMORPG|0
+Lost Ark|0|MMORPG|0
+New World|399000|MMORPG|0
+Star Wars: The Old Republic|0|MMORPG|0
+Neverwinter|0|MMORPG|0
+Star Trek Online|0|MMORPG|0
+DC Universe Online|0|MMORPG|0
+Lord of the Rings Online|0|MMORPG|0
+Blade & Soul|0|MMORPG|0
+TERA|0|MMORPG|0
+Vindictus|0|MMORPG|0
+MapleStory|0|MMORPG|0
+Phantasy Star Online 2|0|MMORPG|0
+Warframe|0|Action|2
+Path of Exile|0|RPG|0
+Genshin Impact|0|RPG|0
+Honkai: Star Rail|0|RPG|0
+Tower of Fantasy|0|MMORPG|0
+Blue Protocol|0|MMORPG|0
+Throne and Liberty|0|MMORPG|0
+Swords of Legends Online|399000|MMORPG|0
+Bless Unleashed|0|MMORPG|0
+Aion|0|MMORPG|0
+Lineage 2|0|MMORPG|0
+Albion Online|0|MMORPG|0
+Archeage|0|MMORPG|0
+Conqueror's Blade|0|Action|0
+Smite|0|MOBA|0
+Heroes of the Storm|0|MOBA|0
+League of Legends|0|MOBA|0
+Dota 2|0|MOBA|0
+Mobile Legends|0|MOBA|0
+Arena of Valor|0|MOBA|0
+Pokemon Unite|0|MOBA|0
+Eternal Return|0|Battle Royale|0
+Naraka: Bladepoint|189000|Battle Royale|0
+Super People|0|Battle Royale|0
+Realm Royale|0|Battle Royale|0
+Spellbreak|0|Battle Royale|0
+Darwin Project|0|Battle Royale|0
+The Cycle: Frontier|0|Battle Royale|0
+Rumbleverse|0|Battle Royale|0
+Vampire: The Masquerade BR|0|Battle Royale|0
+Cuisine Royale|0|Battle Royale|0
+Ring of Elysium|0|Battle Royale|0
+Radical Heights|0|Battle Royale|0

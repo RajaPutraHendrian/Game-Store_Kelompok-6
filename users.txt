@@ -1,0 +1,12 @@
+3301011234560001|Andi Wijaya|Jl. Mangga Dua No. 45, Jakarta Pusat|12|3|1995|0|1|0|0|Software Engineer|0|user123|andi.wijaya@email.com
+3301021234560002|Sinta Dewi|Jl. Kebon Jeruk No. 23, Jakarta Barat|25|7|1998|1|0|0|0|Graphic Designer|0|user234|sinta.dewi@email.com
+3301031234560003|Rudi Hartono|Jl. Sudirman No. 78, Bandung|8|11|1992|0|2|1|1|Marketing Manager|0|user345|rudi.hartono@email.com
+3301041234560004|Lisa Permata|Jl. Gatot Subroto No. 34, Surabaya|14|2|1996|1|3|2|0|Teacher|0|user456|lisa.permata@email.com
+3301051234560005|Budi Santoso|Jl. Ahmad Yani No. 56, Semarang|30|5|1990|0|1|0|1|Entrepreneur|0|user567|budi.santoso@email.com
+3301061234560006|Maya Kusuma|Jl. Diponegoro No. 89, Yogyakarta|18|9|1994|1|0|3|0|Content Creator|0|user678|maya.kusuma@email.com
+3301071234560007|Doni Prasetyo|Jl. Veteran No. 12, Medan|5|12|1993|0|2|0|0|Data Analyst|0|user789|doni.prasetyo@email.com
+3301081234560008|Rina Wulandari|Jl. Pemuda No. 67, Malang|22|4|1997|1|1|0|0|Photographer|0|user890|rina.wulandari@email.com
+3301091234560009|Agung Setiawan|Jl. Pahlawan No. 90, Denpasar|11|1|1991|0|3|3|1|Web Developer|0|user901|agung.setiawan@email.com
+3301101234560010|Fitri Handayani|Jl. Merdeka No. 33, Palembang|3|8|1999|1|0|0|0|Student|0|user012|fitri.handayani@email.com
+3|ANDRE|ANDRE|3|3|3|0|0|0|0|Mahasiswa|0|andre|andre
+4|test|test|4|4|4|1|3|3|0|test|1|test|test

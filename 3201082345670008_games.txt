@@ -1,0 +1,50 @@
+Among Us|45000|Party|1
+Fall Guys|0|Party|2
+Gang Beasts|189000|Party|1
+Human: Fall Flat|189000|Party|0
+Overcooked 2|229000|Party|2
+Overcooked All You Can Eat|379000|Party|0
+Moving Out|229000|Party|0
+Moving Out 2|279000|Party|0
+It Takes Two|399000|Adventure|0
+A Way Out|279000|Adventure|0
+Unrailed!|189000|Party|0
+Tools Up!|189000|Party|0
+Heave Ho|99000|Party|0
+Pummel Party|139000|Party|0
+Ultimate Chicken Horse|139000|Party|0
+Stick Fight: The Game|49000|Party|0
+Duck Game|129000|Party|0
+SpeedRunners|139000|Party|0
+Jackbox Party Pack 9|279000|Party|0
+Jackbox Party Pack 8|279000|Party|0
+Jackbox Party Pack 7|279000|Party|0
+Keep Talking Nobody Explodes|139000|Puzzle|0
+We Were Here|0|Puzzle|0
+We Were Here Together|119000|Puzzle|0
+We Were Here Forever|169000|Puzzle|0
+Pico Park|49000|Puzzle|0
+Escape Simulator|139000|Puzzle|0
+Crab Game|0|Party|0
+Goose Goose Duck|0|Party|0
+Project Winter|189000|Survival|0
+Deceit|0|Action|0
+Eville|189000|Party|0
+First Class Trouble|139000|Party|0
+Town of Salem 2|89000|Party|0
+Dread Hunger|279000|Survival|0
+Unfortunate Spacemen|0|Action|0
+Barotrauma|279000|Survival|0
+Gartic Phone|0|Party|0
+Skribbl.io|0|Party|0
+Golf With Your Friends|139000|Sports|0
+Golf It!|69000|Sports|0
+What The Golf|189000|Sports|0
+Super Bunny Man|139000|Platformer|0
+Totally Accurate Battle Simulator|189000|Simulation|0
+Totally Reliable Delivery Service|139000|Simulation|0
+Rubber Bandits|189000|Party|0
+Party Animals|249000|Party|0
+Plate Up!|189000|Simulation|0
+Bread & Fred|139000|Platformer|0
+Chained Together|49000|Platformer|0

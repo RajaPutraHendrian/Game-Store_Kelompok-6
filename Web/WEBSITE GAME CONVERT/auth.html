@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Authentication</title>
+<link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+<div class="auth-wrapper">
+  <div class="auth-card">
+    <h2 id="title">Login</h2>
+
+    <!-- Form Login/Register User -->
+    <div id="userForm">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+    </div>
+
+    <!-- Form Tambahan untuk Publisher -->
+    <div id="publisherForm" style="display:none;">
+      <input type="text" id="studioName" placeholder="Nama Studio">
+      <input type="text" id="country" placeholder="Negara">
+      <input type="text" id="yearFounded" placeholder="Tahun Berdiri">
+    </div>
+
+    <button id="mainBtn" onclick="submitForm()">Login</button>
+
+    <p class="link">
+      <span onclick="switchMode()">Register</span> ·
+      <span onclick="switchRole()" id="roleSwitch" style="display:none;">Daftar sebagai Publisher</span> ·
+      <span onclick="forgotPassword()">Forgot Password?</span>
+    </p>
+  </div>
+</div>
+
+<script src="user.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

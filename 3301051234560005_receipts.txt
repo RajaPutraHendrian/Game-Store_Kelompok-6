@@ -1,0 +1,239 @@
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300394631
+Tanggal/Waktu : 19/11/2025 12:15:16
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : Dead Space
+----------------------------------------
+  Harga Asli  : Rp 189000
+  TOTAL BAYAR : Rp 189000
+========================================
+METODE PEMBAYARAN:
+  Kartu Debit BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300399439
+Tanggal/Waktu : 18/10/2025 18:11:13
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : Battlefield V
+----------------------------------------
+  Harga Asli  : Rp 349000
+  TOTAL BAYAR : Rp 349000
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300397962
+Tanggal/Waktu : 25/12/2025 02:44:32
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : Apex Legends
+----------------------------------------
+  Harga Asli  : Rp 0
+  TOTAL BAYAR : Rp 0
+========================================
+METODE PEMBAYARAN:
+  QRIS - DANA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300395780
+Tanggal/Waktu : 08/12/2025 06:45:40
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : Final Fantasy VII Remake
+----------------------------------------
+  Harga Asli  : Rp 799000
+  Diskon 30%  : -Rp 239700
+  --------------------
+  TOTAL BAYAR : Rp 559300
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300398419
+Tanggal/Waktu : 15/11/2025 16:14:53
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : Undertale
+----------------------------------------
+  Harga Asli  : Rp 279000
+  TOTAL BAYAR : Rp 279000
+========================================
+METODE PEMBAYARAN:
+  QRIS - OVO
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300398878
+Tanggal/Waktu : 19/12/2025 00:44:59
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : Cities: Skylines
+----------------------------------------
+  Harga Asli  : Rp 449000
+  Diskon 30%  : -Rp 134700
+  --------------------
+  TOTAL BAYAR : Rp 314300
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank Mandiri
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300396132
+Tanggal/Waktu : 01/12/2025 12:01:40
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : Rust
+----------------------------------------
+  Harga Asli  : Rp 99000
+  TOTAL BAYAR : Rp 99000
+========================================
+METODE PEMBAYARAN:
+  E-Wallet - ShopeePay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300399984
+Tanggal/Waktu : 18/11/2025 02:26:02
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : Half-Life 2
+----------------------------------------
+  Harga Asli  : Rp 249000
+  Diskon 30%  : -Rp 74700
+  --------------------
+  TOTAL BAYAR : Rp 174300
+========================================
+METODE PEMBAYARAN:
+  E-Wallet - ShopeePay
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300393212
+Tanggal/Waktu : 29/10/2025 17:46:57
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : Alien: Isolation
+----------------------------------------
+  Harga Asli  : Rp 599000
+  TOTAL BAYAR : Rp 599000
+========================================
+METODE PEMBAYARAN:
+  QRIS - GoPay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300394238
+Tanggal/Waktu : 12/10/2025 17:23:43
+Username      : 3301051234560005
+========================================
+DETAIL PEMBELIAN:
+  Game        : XCOM 2
+----------------------------------------
+  Harga Asli  : Rp 45000
+  TOTAL BAYAR : Rp 45000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BNI
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+

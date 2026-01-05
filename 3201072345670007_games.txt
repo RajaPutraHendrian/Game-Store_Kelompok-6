@@ -1,0 +1,50 @@
+Forza Horizon 5|699000|Racing|2
+Forza Horizon 4|559000|Racing|0
+Forza Motorsport|699000|Racing|0
+Gran Turismo 7|699000|Racing|0
+Assetto Corsa|189000|Racing|1
+Assetto Corsa Competizione|399000|Racing|0
+iRacing|0|Racing|0
+Project CARS 3|559000|Racing|0
+Project CARS 2|279000|Racing|0
+DiRT Rally 2.0|399000|Racing|0
+DiRT 5|559000|Racing|0
+WRC 10|499000|Racing|0
+WRC Generations|499000|Racing|0
+F1 2023|699000|Racing|0
+F1 22|559000|Racing|0
+F1 2021|399000|Racing|0
+GRID Legends|399000|Racing|0
+Need for Speed Heat|699000|Racing|0
+Need for Speed Unbound|799000|Racing|0
+Need for Speed Payback|189000|Racing|0
+Burnout Paradise Remastered|189000|Racing|0
+The Crew 2|699000|Racing|0
+Wreckfest|349000|Racing|0
+BeamNG.drive|249000|Simulation|0
+CarX Drift Racing Online|139000|Racing|0
+Art of Rally|249000|Racing|0
+Absolute Drift|139000|Racing|0
+MotoGP 23|499000|Racing|0
+RIDE 4|499000|Racing|0
+TT Isle of Man|449000|Racing|0
+NASCAR Heat 5|279000|Racing|0
+Automobilista 2|369000|Racing|0
+rFactor 2|349000|Racing|0
+RaceRoom Racing Experience|0|Racing|0
+KartKraft|159000|Racing|0
+Trackmania|0|Racing|0
+Descenders|249000|Sports|0
+Riders Republic|699000|Sports|0
+Steep|279000|Sports|0
+FIFA 23|799000|Sports|1
+EA SPORTS FC 24|799000|Sports|0
+eFootball PES 2021|0|Sports|0
+NBA 2K24|699000|Sports|0
+NBA 2K23|559000|Sports|0
+WWE 2K23|699000|Sports|0
+UFC 4|699000|Sports|0
+Tony Hawk's Pro Skater 1+2|399000|Sports|0
+Skater XL|399000|Sports|0
+Session|399000|Sports|0
+OlliOlli World|279000|Sports|0

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership - GameStore</title>
+  <style>
+    :root {
+      --primary: #4ea8de;
+      --bg-dark: #1e1e2f;
+      --bg-card: #2b2d42;
+      --text: #e0e0e0;
+      --accent: #f1c40f;
+      --premium: #ffd700;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .membership-card {
+      background: var(--bg-card);
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .premium-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffd700, #ffed4e);
+      color: #000;
+      padding: 8px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .free-badge {
+      display: inline-block;
+      background: #555;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .benefits-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .benefits-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #3d3f5e;
+    }
+
+    .benefits-list li:before {
+      content: "";
+      color: var(--primary);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn-upgrade {
+      background: linear-gradient(135deg, var(--premium), #ffed4e);
+      color: #000;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-upgrade:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+    }
+
+    .btn-back {
+      background: #555;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .price-tag {
+      font-size: 32px;
+      font-weight: bold;
+      color: var(--premium);
+      margin: 20px 0;
+    }
+
+    .discount-info {
+      background: rgba(78, 168, 222, 0.1);
+      border-left: 4px solid var(--primary);
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 style="text-align: center; margin-bottom: 10px;">GameStore Membership</h1>
+    <p style="text-align: center; color: #999; margin-bottom: 40px;">Upgrade untuk mendapatkan benefit eksklusif!</p>
+
+    <!-- Current Status -->
+    <div class="membership-card">
+      <h2>Status Membership Anda</h2>
+      <div id="currentStatus"></div>
+    </div>
+
+    <!-- Premium Benefits -->
+    <div class="membership-card" id="upgradeSection">
+      <h2>✨ Premium Membership Benefits</h2>
+      <ul class="benefits-list">
+        <li>Diskon 30% untuk SEMUA pembelian game</li>
+        <li>Akses early access untuk game baru</li>
+        <li>Priority customer support</li>
+        <li>Exclusive premium badge di profile</li>
+        <li>Monthly free game voucher</li>
+      </ul>
+
+      <div class="discount-info">
+        <strong>💰 Contoh Penghematan:</strong><br>
+        Game Rp 100.000 → Hanya Rp 70.000 (Hemat Rp 30.000!)<br>
+        Game Rp 500.000 → Hanya Rp 350.000 (Hemat Rp 150.000!)
+      </div>
+
+      <div class="price-tag">Rp 50.000 / Lifetime</div>
+      <button class="btn-upgrade" onclick="upgradeToPremium()">🚀 Upgrade Sekarang!</button>
+    </div>
+
+    <a href="index.html" class="btn-back">← Kembali ke Store</a>
+  </div>
+
+  <script src="user.js"></script>
+  <script>
+    function displayMembershipStatus() {
+      const user = getCurrentUser();
+      const statusDiv = document.getElementById("currentStatus");
+      const upgradeSection = document.getElementById("upgradeSection");
+
+      if (!user) {
+        statusDiv.innerHTML = `<p>Silakan login terlebih dahulu untuk melihat status membership.</p>`;
+        upgradeSection.style.display = "none";
+        return;
+      }
+
+      const isPremium = user.membershipLevel === "premium";
+
+      if (isPremium) {
+        statusDiv.innerHTML = `
+      <span class="premium-badge">PREMIUM MEMBER</span>
+      <h3>Selamat! Anda adalah member Premium</h3>
+      <p style="color: #999;">Nikmati diskon 30% untuk semua pembelian game!</p>
+    `;
+        upgradeSection.style.display = "none";
+      } else {
+        statusDiv.innerHTML = `
+      <span class="free-badge">FREE MEMBER</span>
+      <h3>Anda saat ini menggunakan membership gratis</h3>
+      <p style="color: #999;">Upgrade ke Premium untuk mendapatkan diskon 30%!</p>
+    `;
+      }
+    }
+
+    function upgradeToPremium() {
+      const user = getCurrentUser();
+      if (!user) {
+        alert("Silakan login terlebih dahulu!");
+        window.location.href = "auth.html";
+        return;
+      }
+
+      if (user.membershipLevel === "premium") {
+        alert("Anda sudah menjadi Premium Member!");
+        return;
+      }
+
+      const confirm = window.confirm(
+        "Upgrade ke Premium Membership?\n\n" +
+        "Biaya: Rp 50.000 (Lifetime)\n" +
+        "Benefit: Diskon 30% untuk SEMUA pembelian\n\n" +
+        "Lanjutkan pembayaran?"
+      );
+
+      if (confirm) {
+        // Update user membership
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+        const userIndex = users.findIndex(u => u.username === user.username);
+
+        if (userIndex !== -1) {
+          users[userIndex].membershipLevel = "premium";
+          users[userIndex].membershipDate = new Date().toISOString();
+          localStorage.setItem("users", JSON.stringify(users));
+
+          alert("🎉 Selamat! Anda sekarang adalah Premium Member!\n\nDiskon 30% otomatis diterapkan di setiap pembelian.");
+          displayMembershipStatus();
+        }
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", displayMembershipStatus);
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300394229
+Tanggal/Waktu : 01/01/2026 00:23:57
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Stardew Valley
+----------------------------------------
+  Harga Asli  : Rp 119000
+  TOTAL BAYAR : Rp 119000
+========================================
+METODE PEMBAYARAN:
+  Kartu Debit BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300392412
+Tanggal/Waktu : 11/12/2025 09:36:02
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Stellaris
+----------------------------------------
+  Harga Asli  : Rp 45000
+  TOTAL BAYAR : Rp 45000
+========================================
+METODE PEMBAYARAN:
+  Kartu Debit BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300397700
+Tanggal/Waktu : 01/01/2026 20:24:35
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Grand Theft Auto V
+----------------------------------------
+  Harga Asli  : Rp 0
+  TOTAL BAYAR : Rp 0
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300397668
+Tanggal/Waktu : 12/12/2025 11:08:55
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Divinity: Original Sin 2
+----------------------------------------
+  Harga Asli  : Rp 319000
+  Diskon 30%  : -Rp 95700
+  --------------------
+  TOTAL BAYAR : Rp 223300
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300393816
+Tanggal/Waktu : 09/10/2025 21:55:02
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Spelunky 2
+----------------------------------------
+  Harga Asli  : Rp 559000
+  TOTAL BAYAR : Rp 559000
+========================================
+METODE PEMBAYARAN:
+  QRIS - OVO
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300396300
+Tanggal/Waktu : 21/11/2025 23:29:24
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Resident Evil Village
+----------------------------------------
+  Harga Asli  : Rp 349000
+  TOTAL BAYAR : Rp 349000
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300392149
+Tanggal/Waktu : 18/10/2025 03:14:39
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Dishonored 2
+----------------------------------------
+  Harga Asli  : Rp 0
+  Diskon 30%  : -Rp 0
+  --------------------
+  TOTAL BAYAR : Rp 0
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300394798
+Tanggal/Waktu : 23/10/2025 23:39:18
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Ori and the Blind Forest
+----------------------------------------
+  Harga Asli  : Rp 159000
+  TOTAL BAYAR : Rp 159000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank Mandiri
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391034
+Tanggal/Waktu : 03/01/2026 07:31:23
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Outlast 2
+----------------------------------------
+  Harga Asli  : Rp 399000
+  TOTAL BAYAR : Rp 399000
+========================================
+METODE PEMBAYARAN:
+  Kartu Debit BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300399138
+Tanggal/Waktu : 08/11/2025 10:42:48
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Layers of Fear
+----------------------------------------
+  Harga Asli  : Rp 559000
+  Diskon 30%  : -Rp 167700
+  --------------------
+  TOTAL BAYAR : Rp 391300
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Visa
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX0001
+Tanggal/Waktu : 05/01/2026 03:29:23
+Username      : 3301011234560001
+========================================
+DETAIL PEMBELIAN:
+  Game        : Manor Lords
+  Kategori    : Strategy
+  Publisher   : Pixel Forge Studios
+----------------------------------------
+  Harga Asli  : Rp 349000
+  TOTAL BAYAR : Rp 349000
+========================================
+METODE PEMBAYARAN:
+  BNI Virtual Account
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+

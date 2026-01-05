@@ -1,0 +1,230 @@
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300398047
+Tanggal/Waktu : 04/12/2025 16:51:15
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : Age of Empires IV
+----------------------------------------
+  Harga Asli  : Rp 249000
+  TOTAL BAYAR : Rp 249000
+========================================
+METODE PEMBAYARAN:
+  Kartu Debit BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391532
+Tanggal/Waktu : 20/11/2025 00:19:49
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : Cyberpunk 2077
+----------------------------------------
+  Harga Asli  : Rp 139000
+  TOTAL BAYAR : Rp 139000
+========================================
+METODE PEMBAYARAN:
+  Kartu Kredit - Mastercard
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300399357
+Tanggal/Waktu : 19/12/2025 13:31:47
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : 7 Days to Die
+----------------------------------------
+  Harga Asli  : Rp 319000
+  TOTAL BAYAR : Rp 319000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank Mandiri
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300398622
+Tanggal/Waktu : 30/10/2025 16:50:26
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : Forza Horizon 5
+----------------------------------------
+  Harga Asli  : Rp 279000
+  TOTAL BAYAR : Rp 279000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank Mandiri
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300395078
+Tanggal/Waktu : 25/12/2025 11:19:29
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : Frostpunk
+----------------------------------------
+  Harga Asli  : Rp 159000
+  TOTAL BAYAR : Rp 159000
+========================================
+METODE PEMBAYARAN:
+  QRIS - GoPay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391553
+Tanggal/Waktu : 03/12/2025 13:14:09
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : Gang Beasts
+----------------------------------------
+  Harga Asli  : Rp 119000
+  TOTAL BAYAR : Rp 119000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank Mandiri
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300393824
+Tanggal/Waktu : 11/11/2025 22:12:05
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : Valheim
+----------------------------------------
+  Harga Asli  : Rp 799000
+  TOTAL BAYAR : Rp 799000
+========================================
+METODE PEMBAYARAN:
+  QRIS - OVO
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300399376
+Tanggal/Waktu : 30/12/2025 08:33:03
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : Layers of Fear
+----------------------------------------
+  Harga Asli  : Rp 349000
+  TOTAL BAYAR : Rp 349000
+========================================
+METODE PEMBAYARAN:
+  QRIS - GoPay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300399581
+Tanggal/Waktu : 13/11/2025 00:53:38
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : Fallout 4
+----------------------------------------
+  Harga Asli  : Rp 319000
+  TOTAL BAYAR : Rp 319000
+========================================
+METODE PEMBAYARAN:
+  QRIS - GoPay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300393918
+Tanggal/Waktu : 19/12/2025 07:54:17
+Username      : 3301061234560006
+========================================
+DETAIL PEMBELIAN:
+  Game        : Dark Souls III
+----------------------------------------
+  Harga Asli  : Rp 99000
+  TOTAL BAYAR : Rp 99000
+========================================
+METODE PEMBAYARAN:
+  Kartu Debit BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+

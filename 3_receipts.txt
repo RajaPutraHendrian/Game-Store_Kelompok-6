@@ -1,0 +1,81 @@
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX0002
+Tanggal/Waktu : 05/01/2026 05:44:42
+Username      : 3
+========================================
+DETAIL PEMBELIAN:
+  Game        : Still Wake UP
+  Kategori    : Horror
+  Publisher   : Epoc Gamers
+----------------------------------------
+  Harga Asli  : Rp 123
+  TOTAL BAYAR : Rp 123
+========================================
+METODE PEMBAYARAN:
+  GoPay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX0003
+Tanggal/Waktu : 05/01/2026 06:21:00
+Username      : 3
+========================================
+DETAIL PEMBELIAN:
+  Game        : SilkSong
+  Kategori    : Platformer
+  Publisher   : NANDO STORE
+----------------------------------------
+  Harga Asli  : Rp 321
+  TOTAL BAYAR : Rp 321
+========================================
+METODE PEMBAYARAN:
+  GoPay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX0004
+Tanggal/Waktu : 05/01/2026 16:21:04
+Username      : 3
+========================================
+DETAIL PEMBELIAN:
+  Game        : Deep Rock Galactic
+  Kategori    : Action
+  Publisher   : Mega Games Studio
+----------------------------------------
+  Harga Asli  : Rp 279000
+  TOTAL BAYAR : Rp 279000
+========================================
+METODE PEMBAYARAN:
+  GoPay
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+

@@ -1,0 +1,251 @@
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391065
+Tanggal/Waktu : 12/12/2025 11:33:55
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : Dishonored 2
+----------------------------------------
+  Harga Asli  : Rp 399000
+  Diskon 30%  : -Rp 119700
+  --------------------
+  TOTAL BAYAR : Rp 279300
+========================================
+METODE PEMBAYARAN:
+  QRIS - DANA
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391013
+Tanggal/Waktu : 09/10/2025 18:04:25
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : Alien: Isolation
+----------------------------------------
+  Harga Asli  : Rp 559000
+  Diskon 30%  : -Rp 167700
+  --------------------
+  TOTAL BAYAR : Rp 391300
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BNI
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300392422
+Tanggal/Waktu : 08/12/2025 03:09:49
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : Outlast 2
+----------------------------------------
+  Harga Asli  : Rp 45000
+  Diskon 30%  : -Rp 13501
+  --------------------
+  TOTAL BAYAR : Rp 31499
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank Mandiri
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300392162
+Tanggal/Waktu : 02/11/2025 00:04:43
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : RimWorld
+----------------------------------------
+  Harga Asli  : Rp 45000
+  TOTAL BAYAR : Rp 45000
+========================================
+METODE PEMBAYARAN:
+  Kartu Debit BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300397967
+Tanggal/Waktu : 09/12/2025 06:57:40
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : Factorio
+----------------------------------------
+  Harga Asli  : Rp 45000
+  Diskon 30%  : -Rp 13501
+  --------------------
+  TOTAL BAYAR : Rp 31499
+========================================
+METODE PEMBAYARAN:
+  QRIS - OVO
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300392255
+Tanggal/Waktu : 07/11/2025 20:38:19
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : Resident Evil 4
+----------------------------------------
+  Harga Asli  : Rp 229000
+  TOTAL BAYAR : Rp 229000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BCA
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300398127
+Tanggal/Waktu : 20/12/2025 00:25:22
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : Borderlands 3
+----------------------------------------
+  Harga Asli  : Rp 799000
+  Diskon 30%  : -Rp 239700
+  --------------------
+  TOTAL BAYAR : Rp 559300
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BNI
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300398659
+Tanggal/Waktu : 21/12/2025 15:39:49
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : Risk of Risk 2
+----------------------------------------
+  Harga Asli  : Rp 45000
+  TOTAL BAYAR : Rp 45000
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank Mandiri
+========================================
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391807
+Tanggal/Waktu : 29/12/2025 13:22:19
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : ARK: Survival Evolved
+----------------------------------------
+  Harga Asli  : Rp 279000
+  Diskon 30%  : -Rp 83700
+  --------------------
+  TOTAL BAYAR : Rp 195300
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BNI
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+
+========================================
+         STRUK PEMBELIAN GAME
+            GAME STORE
+========================================
+No. Transaksi : TRX202601050300391049
+Tanggal/Waktu : 25/10/2025 15:54:37
+Username      : 3301101234560010
+========================================
+DETAIL PEMBELIAN:
+  Game        : Hades
+----------------------------------------
+  Harga Asli  : Rp 119000
+  Diskon 30%  : -Rp 35700
+  --------------------
+  TOTAL BAYAR : Rp 83300
+========================================
+METODE PEMBAYARAN:
+  Transfer Bank BCA
+========================================
+* Voucher member telah digunakan
+
+  Terima kasih atas pembelian Anda!
+  Game dapat diunduh dari menu Library
+
+========================================
+

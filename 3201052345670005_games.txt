@@ -1,0 +1,50 @@
+Skyrim Special Edition|399000|RPG|2
+Fallout 4|279000|RPG|1
+Fallout: New Vegas|99000|RPG|0
+Fallout 3|99000|RPG|0
+The Elder Scrolls IV: Oblivion|139000|RPG|0
+Divinity: Original Sin 2|449000|RPG|1
+Baldur's Gate 3|699000|RPG|0
+Pillars of Eternity|449000|RPG|0
+Pillars of Eternity II|499000|RPG|0
+Tyranny|449000|RPG|0
+Torment: Tides of Numenera|449000|RPG|0
+Wasteland 2|399000|RPG|0
+Wasteland 3|399000|RPG|0
+Disco Elysium|399000|RPG|1
+Persona 5 Royal|699000|RPG|0
+Persona 4 Golden|279000|RPG|1
+NieR: Automata|399000|Action|0
+NieR Replicant|599000|Action|0
+Final Fantasy VII Remake|699000|RPG|1
+Final Fantasy XV|349000|RPG|0
+Final Fantasy X/X-2 HD|459000|RPG|0
+Scarlet Nexus|559000|Action|0
+Tales of Arise|559000|RPG|0
+Yakuza 0|189000|Action|0
+Yakuza Kiwami|189000|Action|0
+Yakuza Kiwami 2|249000|Action|0
+Yakuza: Like a Dragon|559000|RPG|0
+Dragon Quest XI|399000|RPG|0
+Octopath Traveler|559000|RPG|0
+Octopath Traveler II|699000|RPG|0
+Bravely Default II|559000|RPG|0
+Triangle Strategy|559000|Strategy|0
+Live A Live|459000|RPG|0
+Chrono Trigger|139000|RPG|0
+Trials of Mana|459000|RPG|0
+Star Ocean: The Divine Force|699000|RPG|0
+Valkyria Chronicles|189000|Strategy|0
+Valkyria Chronicles 4|279000|Strategy|0
+Fire Emblem: Three Houses|559000|Strategy|0
+Ni no Kuni: Wrath White Witch|459000|RPG|0
+Ni no Kuni II|559000|RPG|0
+Kingdom Hearts III|699000|Action|0
+The Legend of Heroes: Trails Sky|139000|RPG|0
+The Legend of Heroes: Cold Steel|399000|RPG|0
+Atelier Ryza|559000|RPG|0
+Atelier Ryza 2|559000|RPG|0
+Atelier Ryza 3|559000|RPG|0
+Code Vein|559000|Action|0
+God Eater 3|559000|Action|0
+Scarlet Nexus|559000|Action|0
